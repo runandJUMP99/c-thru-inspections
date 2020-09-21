@@ -1,0 +1,33 @@
+.CTASection {
+    padding: 5rem 1rem;
+    text-align: center;
+}
+
+.CTASection ul {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0 auto 2rem;
+    max-width: 600px;
+    padding: 0;
+}
+
+.CTASection li {
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 0.25rem 0.5rem;
+    transition: all 0.2s ease-out;
+}
+
+@media (min-width: 700px) {
+    .CTASection {
+        padding: 5rem 3rem;
+    }
+    
+    .CTASection ul {
+        font-size: 1.5rem;
+        justify-content: space-between;
+        width: 70%;
+    }    
+}

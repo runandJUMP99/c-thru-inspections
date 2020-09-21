@@ -1,0 +1,29 @@
+.Services {
+    color: #ecf4f3;
+    margin: auto;
+    max-width: 1100px;
+    padding: 5rem 1rem;
+    text-align: center;
+}
+
+.ServicesGroup {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.ServicesGroup i {
+    color: #ff7e67;
+    font-size: 3.5rem;
+}
+
+@media (min-width: 700px) {
+    .Services {
+        padding: 5rem 3rem;
+    }
+
+    .ServicesGroup {
+        flex-direction: row;
+    }
+}
