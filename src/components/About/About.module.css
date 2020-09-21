@@ -1,0 +1,39 @@
+.About {
+    align-items: center;
+    background: #ecf4f3;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    padding: 5rem 3rem;
+}
+
+.About img {
+    box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.5);
+    margin: 2rem 0;
+    width: 90%;
+}
+
+.Text {
+    line-height: 1.75;
+    text-align: center;
+    width: 90%;
+}
+
+.Text h2 {
+    color: #ff7e67;
+}
+
+@media (min-width: 700px) {
+    .About {
+        flex-direction: row;
+    }
+
+    .About img {
+        width: 40%;
+    }
+
+    .Text {
+        text-align: right;
+        width: 40%;
+    }
+}

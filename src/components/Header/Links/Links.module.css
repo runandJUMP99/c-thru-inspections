@@ -1,0 +1,11 @@
+.Links {
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+
+@media (min-width: 700px) {
+    .Links {
+        display: flex;
+    }
+}

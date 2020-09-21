@@ -1,0 +1,28 @@
+.Jumbotron {
+    background: linear-gradient(rgba(0, 0, 0, 0.2) 100%, transparent), 
+    url("https://firebasestorage.googleapis.com/v0/b/c-thru-inspections.appspot.com/o/living-on-the-edge-844873_1920.jpg?alt=media&token=f2901526-ced5-4d84-9489-ff546253d3d8") 20%/cover no-repeat border-box, #75daad;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    position: relative;
+    width: 100%;
+}
+
+.Text {
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 25%;
+    width: 90%;
+}
+
+@media (min-width: 700px) {
+    .Text {
+        left: initial;
+        right: 10%;
+        text-align: right;
+        top: 40%;
+        width: 390px;
+    }
+}

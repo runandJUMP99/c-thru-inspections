@@ -1,0 +1,16 @@
+.CTAButton {
+    background: #006a71;
+    border: none;
+    border-radius: 8px;
+    color: #ecf4f3;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    padding: 1rem;
+    transition: all 0.1s ease-out;
+}
+
+.CTAButton:hover {
+    background: #68b0ab;
+    color: #ecf4f3;
+}
