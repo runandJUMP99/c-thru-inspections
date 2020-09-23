@@ -14,3 +14,8 @@
     background: #68b0ab;
     color: #ecf4f3;
 }
+
+.CTAButton:disabled {
+    background: #68b0ab;
+    cursor: not-allowed;
+}

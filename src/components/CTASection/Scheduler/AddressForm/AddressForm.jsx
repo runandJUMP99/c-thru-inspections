@@ -1,16 +1,16 @@
 import React, {useState} from "react";
 
-import CTAButton from "../../UI/CTAButton/CTAButton";
-import Input from "../../UI/Input/Input";
+import CTAButton from "../../../UI/CTAButton/CTAButton";
+import Input from "../../../UI/Input/Input";
 
-import classes from "./ContactUs.module.css";
+import classes from "./AddressForm.module.css";
 
-const ContactUs = () => {
-    const [messageForm, setMessageForm] = useState({
-        name: {
+const AddressForm = (props) => {
+    const [addressForm, setAddressForm] = useState({
+        street: {
             elementType: "input",
             elementConfig:{
-                placeholder: "Your Name",
+                placeholder: "Street Address",
                 type: "text"
             },
             value: "",
@@ -20,23 +20,10 @@ const ContactUs = () => {
             valid: false,
             touched: false
         },
-        email: {
+        city: {
             elementType: "input",
             elementConfig:{
-                placeholder: "Email",
-                type: "email"
-            },
-            value: "",
-            validation: {
-                required: true
-            },
-            valid: false,
-            touched: false
-        },
-        phone: {
-            elementType: "input",
-            elementConfig:{
-                placeholder: "Phone Number",
+                placeholder: "City",
                 type: "text"
             },
             value: "",
@@ -46,19 +33,32 @@ const ContactUs = () => {
             valid: false,
             touched: false
         },
-        message: {
-            elementType: 'textarea',
-            elementConfig: {
-                placeholder: 'Description',
-                rows: 4
+        state: {
+            elementType: "input",
+            elementConfig:{
+                placeholder: "State",
+                type: "text"
             },
-            value: '',
+            value: "",
             validation: {
                 required: true
             },
             valid: false,
             touched: false
         },
+        zip: {
+            elementType: "input",
+            elementConfig:{
+                placeholder: "Zip Code",
+                type: "text"
+            },
+            value: "",
+            validation: {
+                required: true
+            },
+            valid: false,
+            touched: false
+        }
     });
 
     const [formIsValid, setFormIsValid] = useState(false);
@@ -67,8 +67,8 @@ const ContactUs = () => {
         event.preventDefault();
         const formData = {};
         
-        for (let formElementIdentifier in messageForm) {
-            formData[formElementIdentifier] = messageForm[formElementIdentifier].value;
+        for (let formElementIdentifier in addressForm) {
+            formData[formElementIdentifier] = addressForm[formElementIdentifier].value;
         }
 
         console.log(formData);
@@ -86,7 +86,7 @@ const ContactUs = () => {
 
     const inputChangedHandler = (event, inputIdentifier) => {
         const updatedOrderForm = {
-            ...messageForm
+            ...addressForm
         }
         
         const updatedFormElement = {
@@ -103,16 +103,16 @@ const ContactUs = () => {
         for (let inputIdentifier in updatedOrderForm) {
             formIsValid = updatedOrderForm[inputIdentifier].valid && formIsValid;
         }
-        setMessageForm(updatedOrderForm);
+        setAddressForm(updatedOrderForm);
         setFormIsValid(formIsValid);
     }
 
     const formElementsArray = [];
 
-    for (let key in messageForm) {
+    for (let key in addressForm) {
         formElementsArray.push({
             id: key,
-            config: messageForm[key]
+            config: addressForm[key]
         });
     }
 
@@ -129,16 +129,16 @@ const ContactUs = () => {
                     changed={(event) => inputChangedHandler(event, formElement.id)}
                     value={formElement.config.value}/>
             ))}
-            <CTAButton disabled={!formIsValid}>Submit</CTAButton>
+            <CTAButton onClick={props.onClick} disabled={!formIsValid}>Next</CTAButton>
         </form>
     );
-
+    
     return (
-        <div className={classes.ContactUs}>
-            <h4>Enter your Contact Information</h4>
+        <div className={classes.AddressForm}>
+            <h4>Enter Your Address</h4>
             {form}
         </div>
     );
 }
 
-export default ContactUs;
+export default AddressForm;

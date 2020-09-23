@@ -4,3 +4,8 @@
     margin-left: 1rem;
     text-decoration: none;
 }
+
+.Logo:hover {
+    color: #ecf4f3;
+    text-decoration: none;
+}

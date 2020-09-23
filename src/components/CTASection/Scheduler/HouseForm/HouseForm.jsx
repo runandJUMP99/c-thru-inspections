@@ -1,16 +1,16 @@
 import React, {useState} from "react";
 
-import CTAButton from "../../UI/CTAButton/CTAButton";
-import Input from "../../UI/Input/Input";
+import CTAButton from "../../../UI/CTAButton/CTAButton";
+import Input from "../../../UI/Input/Input";
 
-import classes from "./ContactUs.module.css";
+import classes from "./HouseForm.module.css";
 
-const ContactUs = () => {
-    const [messageForm, setMessageForm] = useState({
-        name: {
+const HouseForm = (props) => {
+    const [houseForm, setHouseForm] = useState({
+        year: {
             elementType: "input",
             elementConfig:{
-                placeholder: "Your Name",
+                placeholder: "Year Build",
                 type: "text"
             },
             value: "",
@@ -20,23 +20,10 @@ const ContactUs = () => {
             valid: false,
             touched: false
         },
-        email: {
+        squareFeet: {
             elementType: "input",
             elementConfig:{
-                placeholder: "Email",
-                type: "email"
-            },
-            value: "",
-            validation: {
-                required: true
-            },
-            valid: false,
-            touched: false
-        },
-        phone: {
-            elementType: "input",
-            elementConfig:{
-                placeholder: "Phone Number",
+                placeholder: "Square Feet",
                 type: "text"
             },
             value: "",
@@ -46,19 +33,97 @@ const ContactUs = () => {
             valid: false,
             touched: false
         },
-        message: {
-            elementType: 'textarea',
-            elementConfig: {
-                placeholder: 'Description',
-                rows: 4
+        foundation: {
+            elementType: "input",
+            elementConfig:{
+                placeholder: "Foundation Type",
+                type: "text"
             },
-            value: '',
+            value: "",
             validation: {
                 required: true
             },
             valid: false,
             touched: false
         },
+        client: {
+            elementType: "input",
+            elementConfig:{
+                placeholder: "Client Attending",
+                type: "text"
+            },
+            value: "",
+            validation: {
+                required: true
+            },
+            valid: false,
+            touched: false
+        },
+        occupied: {
+            elementType: "input",
+            elementConfig:{
+                placeholder: "Occupied",
+                type: "text"
+            },
+            value: "",
+            validation: {
+                required: true
+            },
+            valid: false,
+            touched: false
+        },
+        utilities: {
+            elementType: "input",
+            elementConfig:{
+                placeholder: "Utilities",
+                type: "text"
+            },
+            value: "",
+            validation: {
+                required: true
+            },
+            valid: false,
+            touched: false
+        },
+        lockboxCode: {
+            elementType: "input",
+            elementConfig:{
+                placeholder: "Lockbox Code",
+                type: "text"
+            },
+            value: "",
+            validation: {
+                required: true
+            },
+            valid: false,
+            touched: false
+        },
+        gateCode: {
+            elementType: "input",
+            elementConfig:{
+                placeholder: "Gate Code",
+                type: "text"
+            },
+            value: "",
+            validation: {
+                required: true
+            },
+            valid: false,
+            touched: false
+        },
+        specialInstructions: {
+            elementType: "input",
+            elementConfig:{
+                placeholder: "Special Instructions",
+                type: "text"
+            },
+            value: "",
+            validation: {
+                required: true
+            },
+            valid: false,
+            touched: false
+        }
     });
 
     const [formIsValid, setFormIsValid] = useState(false);
@@ -67,8 +132,8 @@ const ContactUs = () => {
         event.preventDefault();
         const formData = {};
         
-        for (let formElementIdentifier in messageForm) {
-            formData[formElementIdentifier] = messageForm[formElementIdentifier].value;
+        for (let formElementIdentifier in houseForm) {
+            formData[formElementIdentifier] = houseForm[formElementIdentifier].value;
         }
 
         console.log(formData);
@@ -86,7 +151,7 @@ const ContactUs = () => {
 
     const inputChangedHandler = (event, inputIdentifier) => {
         const updatedOrderForm = {
-            ...messageForm
+            ...houseForm
         }
         
         const updatedFormElement = {
@@ -103,16 +168,16 @@ const ContactUs = () => {
         for (let inputIdentifier in updatedOrderForm) {
             formIsValid = updatedOrderForm[inputIdentifier].valid && formIsValid;
         }
-        setMessageForm(updatedOrderForm);
+        setHouseForm(updatedOrderForm);
         setFormIsValid(formIsValid);
     }
 
     const formElementsArray = [];
 
-    for (let key in messageForm) {
+    for (let key in houseForm) {
         formElementsArray.push({
             id: key,
-            config: messageForm[key]
+            config: houseForm[key]
         });
     }
 
@@ -129,16 +194,16 @@ const ContactUs = () => {
                     changed={(event) => inputChangedHandler(event, formElement.id)}
                     value={formElement.config.value}/>
             ))}
-            <CTAButton disabled={!formIsValid}>Submit</CTAButton>
+            <CTAButton onClick={props.onClick} disabled={!formIsValid}>Next</CTAButton>
         </form>
     );
 
     return (
-        <div className={classes.ContactUs}>
-            <h4>Enter your Contact Information</h4>
+        <div className={classes.HouseForm}>
+            <h4>Enter House Information</h4>
             {form}
         </div>
     );
 }
 
-export default ContactUs;
+export default HouseForm;

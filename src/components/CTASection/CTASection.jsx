@@ -6,13 +6,13 @@ import Scheduler from "./Scheduler/Scheduler";
 import classes from "./CTASection.module.css";
 
 const CTASection = () => {
-    const [content, setContent] = useState(<ContactUs />);
+    const [content, setContent] = useState(true);
 
     function handleClick(selection) {
         if (selection === "contact") {
-            setContent(<ContactUs />);
+            setContent(true);
         } else if (selection === "schedule") {
-            setContent(<Scheduler />)
+            setContent(false)
         }
     }
 
@@ -20,15 +20,15 @@ const CTASection = () => {
         <div className={classes.CTASection}>
             <ul>
                 <li onClick={() => handleClick("contact")} style={{
-                    background: content.type.name === "ContactUs" && "#ff7e67",
-                    color: content.type.name === "ContactUs" && "#ecf4f3",
+                    background: content && "#ff7e67",
+                    color: content && "#ecf4f3",
                 }}>Contact Us</li>
                 <li onClick={() => handleClick("schedule")} style={{
-                    background: content.type.name !== "ContactUs" && "#ff7e67",
-                    color: content.type.name !== "ContactUs" && "#ecf4f3",
+                    background: !content && "#ff7e67",
+                    color: !content && "#ecf4f3",
                 }}>Schedule Inspection</li>
             </ul>
-            {content}
+            {content ? <ContactUs /> : <Scheduler />}
         </div>
     );
 }

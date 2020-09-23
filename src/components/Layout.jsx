@@ -3,6 +3,7 @@ import React, {useState} from "react";
 import About from "./About/About";
 import Backdrop from "./UI/Backdrop/Backdrop";
 import CTASection from "./CTASection/CTASection";
+import Footer from "./Footer/Footer";
 import Header from "./Header/Header";
 import Jumbotron from "./Jumbotron/Jumbotron";
 import Reports from "./Reports/Reports";
@@ -28,6 +29,7 @@ const Layout = () => {
             <Services />
             <Reports />
             <CTASection />
+            <Footer />
         </div>
     );
 }

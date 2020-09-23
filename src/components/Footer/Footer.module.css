@@ -1,0 +1,20 @@
+.Footer {
+    background: #006a71;
+    color: #ecf4f3;
+}
+
+.FooterContent {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 2rem auto;
+    max-width: 650px;
+    padding: 0 2rem;
+}
+
+@media (min-width: 700px) {
+    .FooterContent {
+        flex-direction: row;
+    }
+}
