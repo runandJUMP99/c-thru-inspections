@@ -1,0 +1,30 @@
+.ContactHeader {
+    align-items: center;
+    background: #7ac2bd;
+    color: #ecf4f3;
+    display: flex;
+    font-size: 0.85rem;
+    justify-content: center;
+    margin: auto;
+}
+
+.ContactHeader p {
+    cursor: pointer;
+    margin: 0 0.5rem;
+    padding: 0.5rem;
+}
+
+.ContactHeader p:hover {
+    color: #e4e3e3;
+}
+
+.ContactHeader i {
+    margin-right: 0.5rem
+}
+
+@media (min-width: 700px) {
+    .ContactHeader {
+        font-size: 1.05rem;
+        justify-content: flex-end;
+    }
+}

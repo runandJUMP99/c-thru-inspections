@@ -1,7 +1,18 @@
+.FooterContacts {
+    text-align: center;
+}
+
 .FooterContacts h4 {
     margin-bottom: 1rem;
 }
 
 .FooterContacts i {
     margin-right: 0.5rem;
+}
+
+@media (min-width: 700px) {
+    .FooterContacts {
+        text-align: left;
+        width: 40%;
+    }
 }
