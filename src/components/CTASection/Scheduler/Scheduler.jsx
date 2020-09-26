@@ -16,7 +16,8 @@ const Scheduler = () => {
 
     return (
         <div className={classes.Scheduler}>
-            {forms[currentForm]}
+            Coming Soon!
+            {/* {forms[currentForm]} */}
         </div>
     );
 }

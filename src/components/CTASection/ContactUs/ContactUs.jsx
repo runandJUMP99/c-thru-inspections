@@ -3,6 +3,7 @@ import emailjs from "emailjs-com";
 
 import CTAButton from "../../UI/CTAButton/CTAButton";
 import Input from "../../UI/Input/Input";
+import Spinner from "../../UI/Spinner/Spinner";
 
 import classes from "./ContactUs.module.css";
 
@@ -64,16 +65,19 @@ const ContactUs = () => {
 
     const [message, setMessage] = useState("Enter your Contact Information");
     const [formIsValid, setFormIsValid] = useState(false);
+    const [isLoading, setIsLoading] = useState(false);
 
     const handleSubmit = (event) => {
         event.preventDefault();
+        setIsLoading(true);
+
         const formData = {};
         
         for (let formElementIdentifier in messageForm) {
             formData[formElementIdentifier] = messageForm[formElementIdentifier].value;
         }
 
-        emailjs.send("default_service", "template_j8u25if", formData, process.env.REACT_APP_EMAILJS_KEY)
+        emailjs.send("cthru_inspections", "template_j8u25if", formData, process.env.REACT_APP_EMAILJS_KEY)
             .then(res => {
                 const updatedMessageForm = {
                     ...messageForm
@@ -85,6 +89,7 @@ const ContactUs = () => {
 
                 setMessageForm(updatedMessageForm);
                 setMessage("Your message has been delivered. Thank you!");
+                setIsLoading(false);
             }, err => {
                 console.log('FAILED...', err);
 
@@ -98,6 +103,7 @@ const ContactUs = () => {
 
                 setMessageForm(updatedMessageForm);
                 setMessage("Uh oh! There was an error delivering your message. Please try again.");
+                setIsLoading(false);
             });
     }
 
@@ -143,22 +149,27 @@ const ContactUs = () => {
         });
     }
 
-    let form = (
-        <form onSubmit={handleSubmit}>
-            {formElementsArray.map(formElement => (
-                <Input 
-                    key={formElement.id}
-                    elementType={formElement.config.elementType} 
-                    elementConfig={formElement.config.elementConfig}
-                    invalid={!formElement.config.valid}
-                    shouldValidate={formElement.config.validation}
-                    touched={formElement.config.touched}
-                    changed={(event) => inputChangedHandler(event, formElement.id)}
-                    value={formElement.config.value}/>
-            ))}
-            <CTAButton disabled={!formIsValid}>Submit</CTAButton>
-        </form>
-    );
+    let form = <Spinner />
+
+    if (!isLoading) {
+        form = (
+            <form onSubmit={handleSubmit}>
+                {formElementsArray.map(formElement => (
+                    <Input 
+                        key={formElement.id}
+                        elementType={formElement.config.elementType} 
+                        elementConfig={formElement.config.elementConfig}
+                        invalid={!formElement.config.valid}
+                        shouldValidate={formElement.config.validation}
+                        touched={formElement.config.touched}
+                        changed={(event) => inputChangedHandler(event, formElement.id)}
+                        value={formElement.config.value}/>
+                ))}
+                <CTAButton disabled={!formIsValid}>Submit</CTAButton>
+            </form>
+        );
+    }
+
 
     return (
         <div className={classes.ContactUs}>

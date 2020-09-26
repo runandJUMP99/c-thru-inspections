@@ -6,7 +6,7 @@ import classes from "./Jumbotron.module.css";
 
 const Jumbotron = () => {
     return (
-        <div className={classes.Jumbotron}>
+        <div id="home" className={classes.Jumbotron}>
             <div className={classes.Carousel}>
                 <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
                     <ol className="carousel-indicators">
@@ -18,7 +18,7 @@ const Jumbotron = () => {
                         <div className="carousel-item active">
                             <div className={classes.Image1}>
                                 <div className={classes.Text}>
-                                    <h1>DON'T LIVE ON THE <em>edge!</em></h1>
+                                    <h1>WHEN WAS YOUR LAST <em>inspection?</em></h1>
                                     <p>Allow one of our fully licensed inspectors to asses your home</p>
                                     <CTAButton>Schedule Your Inspection</CTAButton>
                                 </div>
@@ -26,16 +26,16 @@ const Jumbotron = () => {
                         </div>
                         <div className="carousel-item">
                             <div className={classes.Image2}>
-                                <div className={classes.Text}>
+                                <div className={classes.Text1}>
                                     <h1>Standard Home Inspetions</h1>
-                                    <p>Looking to buy a home? Let us make sure it's up to your standards</p>
+                                    <p>Looking to buy a home? Allow us make sure it's up to your standards</p>
                                     <CTAButton>Schedule Your Inspection</CTAButton>
                                 </div>
                             </div>
                         </div>
                         <div className="carousel-item">
                             <div className={classes.Image3}>
-                                <div className={classes.Text}>
+                                <div className={classes.Text2}>
                                     <h1>Superior Service</h1>
                                     <p>Quality inspections. Quality customer service</p>
                                     <CTAButton>Schedule Your Inspection</CTAButton>

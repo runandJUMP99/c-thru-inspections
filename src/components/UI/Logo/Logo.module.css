@@ -1,11 +1,10 @@
 .Logo {
-    color: #ecf4f3;
     cursor: pointer;
     margin-left: 1rem;
     text-decoration: none;
 }
 
 .Logo:hover {
-    color: #ecf4f3;
+    color: initial;
     text-decoration: none;
 }

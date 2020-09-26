@@ -22,8 +22,8 @@ const Layout = () => {
     return (
         <div className={classes.Layout}>
             <Backdrop show={show} onClick={handleClick} />
-            <SideDrawer show={show} />
-            <Header onClick={handleClick}/>
+            <SideDrawer show={show} onClick={handleClick} />
+            <Header onClick={handleClick} />
             <Jumbotron />
             <About />
             <Services />

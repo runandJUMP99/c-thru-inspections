@@ -8,11 +8,11 @@ import classes from "./SideDrawer.module.css";
 const SideDrawer = (props) => {
     return (
         <div className={classes.SideDrawer} style={{
-            transform: props.show ? "translateX(0)" : "translateX(-100%)",
+            transform: props.show ? "translateX(0)" : "translateX(-110%)",
         }}>
-            <Logo />
+            <Logo color="#006a71" />
             <nav>
-                <Links />
+                <Links onClick={props.onClick} />
             </nav>
         </div>
     )

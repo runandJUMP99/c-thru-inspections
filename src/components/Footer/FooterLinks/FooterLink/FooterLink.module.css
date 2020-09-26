@@ -2,3 +2,12 @@
     cursor: pointer;
     margin: 0.75rem;
 }
+
+.FooterLink a {
+    color: #ecf4f3;
+}
+
+.FooterLink a:hover {
+    color: #d4d4d4;
+    text-decoration: none;
+}

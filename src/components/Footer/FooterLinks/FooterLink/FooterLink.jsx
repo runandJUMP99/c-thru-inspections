@@ -5,7 +5,7 @@ import classes from "./FooterLink.module.css";
 const FooterLink = (props) => {
     return (
         <li className={classes.FooterLink}>
-            {props.name}
+            <a href={props.link}>{props.name}</a>
         </li>
     );
 }

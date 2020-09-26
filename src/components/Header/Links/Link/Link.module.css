@@ -1,9 +1,10 @@
-.Link {
-    color: #ecf4f3;
+.Link a {
+    color: #006a71;
     cursor: pointer;
     margin: 1rem;
 }
 
-.Link:hover {
-    color: #ccc;
+.Link a:hover {
+    color: #7ac2bd;
+    text-decoration: none;
 }

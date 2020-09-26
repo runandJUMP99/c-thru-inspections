@@ -12,7 +12,7 @@ const Header = (props) => {
         <header className={classes.Header}>
             <ContactHeader />
             <div className={classes.MainHeader}>
-                <Logo />
+                <Logo color="#006a72" />
                 <nav>
                     <Links />
                 </nav>

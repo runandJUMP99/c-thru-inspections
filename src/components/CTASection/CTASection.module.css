@@ -6,11 +6,13 @@
 .CTASection ul {
     align-items: center;
     display: flex;
-    justify-content: space-around;
+    font-size: 1.2rem;
+    justify-content: space-between;
     list-style: none;
     margin: 0 auto 2rem;
     max-width: 600px;
     padding: 0;
+    width: 90%;
 }
 
 .CTASection li {

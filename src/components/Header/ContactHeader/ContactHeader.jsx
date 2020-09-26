@@ -5,8 +5,8 @@ import classes from "./ContactHeader.module.css";
 const ContactHeader = () => {
     return (
         <div className={classes.ContactHeader}>
-            <p><i className="fas fa-envelope"></i>cthruinspections@gmail.com</p>
-            <p><i className="fas fa-phone"></i>(407) 866-4980</p>
+            <a href="mailto:cthruinspections@gmail.com"><i className="fas fa-envelope"></i>cthruinspections@gmail.com</a>
+            <a href="tel:407-866-4980"><i className="fas fa-phone"></i>(407) 866-4980</a>
         </div>
     );
 }

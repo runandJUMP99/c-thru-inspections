@@ -6,6 +6,15 @@
     margin-bottom: 1rem;
 }
 
+.FooterContacts a {
+    color: #ecf4f3;
+    text-decoration: none;
+}
+
+.FooterContacts a:hover {
+    color: #d4d4d4;
+}
+
 .FooterContacts i {
     margin-right: 0.5rem;
 }
