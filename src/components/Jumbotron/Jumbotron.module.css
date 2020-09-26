@@ -8,51 +8,29 @@
 .Image1,
 .Image2,
 .Image3 {
-    background: linear-gradient(rgba(0, 0, 0, 0.2) 100%, transparent), 
-    url("https://firebasestorage.googleapis.com/v0/b/c-thru-inspections.appspot.com/o/living-on-the-edge-844873_1920.jpg?alt=media&token=f2901526-ced5-4d84-9489-ff546253d3d8") 20%/cover no-repeat border-box;
+    background: url("https://firebasestorage.googleapis.com/v0/b/c-thru-inspections.appspot.com/o/living-on-the-edge-844873_1920.jpg?alt=media&token=f2901526-ced5-4d84-9489-ff546253d3d8") 20%/cover no-repeat border-box;
     height: 100vh;
     width: 100%
 }
 
 .Image2 {
-    background: linear-gradient(rgba(0, 0, 0, 0.5) 100%, transparent), 
-    url("https://firebasestorage.googleapis.com/v0/b/c-thru-inspections.appspot.com/o/new-home-1530833_1920.jpg?alt=media&token=e7084ee2-b7ff-4064-ba41-9b29449dc71c") 3%/cover no-repeat border-box;
+    background: url("https://firebasestorage.googleapis.com/v0/b/c-thru-inspections.appspot.com/o/new-home-1530833_1920.jpg?alt=media&token=e7084ee2-b7ff-4064-ba41-9b29449dc71c") 3%/cover no-repeat border-box;
 }
 
 .Image3 {
-    background: linear-gradient(rgba(0, 0, 0, 0.5) 100%, transparent), 
-    url("https://firebasestorage.googleapis.com/v0/b/c-thru-inspections.appspot.com/o/architecture-1836070_1920.jpg?alt=media&token=e77647b6-2e12-4d81-b4d4-ae23531ba914") 42%/cover no-repeat border-box;
+    background: url("https://firebasestorage.googleapis.com/v0/b/c-thru-inspections.appspot.com/o/architecture-1836070_1920.jpg?alt=media&token=e77647b6-2e12-4d81-b4d4-ae23531ba914") 42%/cover no-repeat border-box;
 }
 
-.Text1,
-.Text2,
-.Text3 {
+.Text {
+    background: rgba(0, 0, 0, 0.6);
+    color: #ecf4f3;
+    left: 0;
+    margin: auto;
+    padding: 2rem 1rem;
     position: absolute;
+    right: 0;
     text-align: center;
-}
-
-.Text1 {
-    left: 0;
-    margin: auto;
-    right: 0;
-    top: 25%;
-    width: 90%;
-}
-
-.Text2 {
-    color: #ecf4f3;
-    right: 5%;
-    text-align: right;
     top: 40%;
-    width: 80%;
-}
-
-.Text3 {
-    color: #ecf4f3;
-    left: 0;
-    margin: auto;
-    right: 0;
-    top: 60%;
     width: 90%;
 }
 
@@ -63,15 +41,7 @@
 }
 
 @media (min-width: 700px) {
-    .Text1 {
-        left: initial;
-        right: 10%;
-        text-align: right;
-        top: 40%;
-        width: 390px;
-    }
-
-    .Text2 {
-        top: 73%;
+    .Text {
+        width: 50%;
     }
 }

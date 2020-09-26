@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import emailjs from "emailjs-com";
 
 import CTAButton from "../../UI/CTAButton/CTAButton";
 import Input from "../../UI/Input/Input";
@@ -52,7 +53,7 @@ const ContactUs = () => {
                 placeholder: 'Description',
                 rows: 4
             },
-            value: '',
+            value: "",
             validation: {
                 required: true
             },
@@ -61,6 +62,7 @@ const ContactUs = () => {
         },
     });
 
+    const [message, setMessage] = useState("Enter your Contact Information");
     const [formIsValid, setFormIsValid] = useState(false);
 
     const handleSubmit = (event) => {
@@ -71,7 +73,32 @@ const ContactUs = () => {
             formData[formElementIdentifier] = messageForm[formElementIdentifier].value;
         }
 
-        console.log(formData);
+        emailjs.send("default_service", "template_j8u25if", formData, process.env.REACT_APP_EMAILJS_KEY)
+            .then(res => {
+                const updatedMessageForm = {
+                    ...messageForm
+                };
+
+                for (let key in updatedMessageForm) {
+                    updatedMessageForm[key].value = "";
+                }
+
+                setMessageForm(updatedMessageForm);
+                setMessage("Your message has been delivered. Thank you!");
+            }, err => {
+                console.log('FAILED...', err);
+
+                const updatedMessageForm = {
+                    ...messageForm
+                };
+
+                for (let key in updatedMessageForm) {
+                    updatedMessageForm[key].value = "";
+                }
+
+                setMessageForm(updatedMessageForm);
+                setMessage("Uh oh! There was an error delivering your message. Please try again.");
+            });
     }
 
     const checkValidity = (value, rules) => {
@@ -85,25 +112,25 @@ const ContactUs = () => {
     }
 
     const inputChangedHandler = (event, inputIdentifier) => {
-        const updatedOrderForm = {
+        const updatedMessageForm = {
             ...messageForm
         }
         
         const updatedFormElement = {
-            ...updatedOrderForm[inputIdentifier]
+            ...updatedMessageForm[inputIdentifier]
         }
 
         updatedFormElement.value = event.target.value;
         updatedFormElement.valid = checkValidity(updatedFormElement.value, updatedFormElement.validation)
         updatedFormElement.touched = true;
-        updatedOrderForm[inputIdentifier] = updatedFormElement;
+        updatedMessageForm[inputIdentifier] = updatedFormElement;
 
         let formIsValid = true;
 
-        for (let inputIdentifier in updatedOrderForm) {
-            formIsValid = updatedOrderForm[inputIdentifier].valid && formIsValid;
+        for (let inputIdentifier in updatedMessageForm) {
+            formIsValid = updatedMessageForm[inputIdentifier].valid && formIsValid;
         }
-        setMessageForm(updatedOrderForm);
+        setMessageForm(updatedMessageForm);
         setFormIsValid(formIsValid);
     }
 
@@ -135,7 +162,7 @@ const ContactUs = () => {
 
     return (
         <div className={classes.ContactUs}>
-            <h4>Enter your Contact Information</h4>
+            <h4>{message}</h4>
             {form}
         </div>
     );
