@@ -24,6 +24,10 @@
     transition: all 0.2s ease-out;
 }
 
+.Service h3 {
+    margin-bottom: 1rem;
+}
+
 @media (min-width: 700px) {
     .Service {
         width: 30%;

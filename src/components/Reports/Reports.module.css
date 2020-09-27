@@ -26,6 +26,11 @@
 
 .Text h2 {
     color: #ff7e67;
+    margin-bottom: 2rem;
+}
+
+.Text p {
+    font-size: 1.2rem;
 }
 
 @media (min-width: 700px) {  
