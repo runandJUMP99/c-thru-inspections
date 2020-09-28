@@ -30,6 +30,7 @@
 
 @media (min-width: 700px) {
     .Service {
+        margin: 1rem 0;
         width: 30%;
     }
 }
