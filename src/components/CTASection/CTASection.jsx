@@ -23,11 +23,11 @@ const CTASection = () => {
                 <ul>
                     <li onClick={() => handleClick("contact")} style={{
                         background: content && "#ff7e67",
-                        color: content && "#ecf4f3",
+                        color: content && "white",
                     }}>Contact Us</li>
                     <li onClick={() => handleClick("schedule")} style={{
                         background: !content && "#ff7e67",
-                        color: !content && "#ecf4f3",
+                        color: !content && "white",
                     }}>Schedule Inspection</li>
                 </ul>
                 {content ? <ContactUs /> : <Scheduler />}
