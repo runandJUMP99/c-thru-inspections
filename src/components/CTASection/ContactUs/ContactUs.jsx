@@ -3,6 +3,7 @@ import emailjs from "emailjs-com";
 
 import CTAButton from "../../UI/CTAButton/CTAButton";
 import Input from "../../UI/Input/Input";
+import ReCAPTCHA from "react-google-recaptcha";
 import Spinner from "../../UI/Spinner/Spinner";
 
 import classes from "./ContactUs.module.css";
@@ -65,7 +66,9 @@ const ContactUs = () => {
 
     const [message, setMessage] = useState("Enter your Contact Information");
     const [formIsValid, setFormIsValid] = useState(false);
+    const [captcha, setCaptcha] = useState(false);
     const [isLoading, setIsLoading] = useState(false);
+    const [messageSent, setMessageSent] = useState(false);
 
     const handleSubmit = (event) => {
         event.preventDefault();
@@ -89,6 +92,7 @@ const ContactUs = () => {
 
                 setMessageForm(updatedMessageForm);
                 setMessage("Your message has been delivered. Thank you!");
+                setMessageSent(true);
                 setIsLoading(false);
             }, err => {
                 console.log('FAILED...', err);
@@ -104,6 +108,8 @@ const ContactUs = () => {
                 setMessageForm(updatedMessageForm);
                 setMessage("Uh oh! There was an error delivering your message. Please try again.");
                 setIsLoading(false);
+                setFormIsValid(false);
+                setCaptcha(false);
             });
     }
 
@@ -134,9 +140,21 @@ const ContactUs = () => {
         let formIsValid = true;
 
         for (let inputIdentifier in updatedMessageForm) {
-            formIsValid = updatedMessageForm[inputIdentifier].valid && formIsValid;
+            formIsValid = updatedMessageForm[inputIdentifier].valid && formIsValid && captcha;
         }
         setMessageForm(updatedMessageForm);
+        setFormIsValid(formIsValid);
+    }
+
+    const handleCaptcha = () => {
+        setCaptcha(true);
+
+        let formIsValid = true;
+
+        for (let key in messageForm) {
+            formIsValid = messageForm[key].valid && formIsValid;
+        }
+
         setFormIsValid(formIsValid);
     }
 
@@ -151,7 +169,9 @@ const ContactUs = () => {
 
     let form = <Spinner />
 
-    if (!isLoading) {
+    if (messageSent && !isLoading) {
+        form = <img src="https://firebasestorage.googleapis.com/v0/b/c-thru-inspections.appspot.com/o/sent.png?alt=media&token=cc258008-f3f1-4219-aba7-ba6cae989daf" alt="Message Sent" />
+    } else if (!messageSent && !isLoading) {
         form = (
             <form onSubmit={handleSubmit}>
                 {formElementsArray.map(formElement => (
@@ -165,11 +185,13 @@ const ContactUs = () => {
                         changed={(event) => inputChangedHandler(event, formElement.id)}
                         value={formElement.config.value}/>
                 ))}
+                <div className={classes.Captcha}>
+                    <ReCAPTCHA sitekey={process.env.REACT_APP_SITE_KEY} onChange={handleCaptcha} />
+                </div>
                 <CTAButton disabled={!formIsValid}>Submit</CTAButton>
             </form>
         );
     }
-
 
     return (
         <div className={classes.ContactUs}>

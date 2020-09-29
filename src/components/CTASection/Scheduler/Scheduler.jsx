@@ -8,15 +8,18 @@ import classes from "./Scheduler.module.css";
 
 const Scheduler = () => {
     const forms = [<AddressForm onClick={handleClick}/>, <ClientForm onClick={handleClick}/>, <HouseForm onClick={handleClick}/>]
-    const [currentForm, setCurrentForm] = useState(0)
+    const [currentForm, setCurrentForm] = useState(0);
+    const [formData, setFormData] = useState([]);
 
-    function handleClick() {
+    function handleClick(data) {
+        setFormData(prevData => prevData.concat(data));
         setCurrentForm(prevValue => prevValue + 1);
     }
-
+    // console.log(formData);
+    
     return (
         <div className={classes.Scheduler}>
-            Coming Soon!
+            <h1>Coming Soon!</h1>
             {/* {forms[currentForm]} */}
         </div>
     );

@@ -30,6 +30,7 @@
     .CTASection ul {
         font-size: 1.5rem;
         justify-content: space-between;
+        margin-bottom: 3rem;
         width: 70%;
     }    
 }

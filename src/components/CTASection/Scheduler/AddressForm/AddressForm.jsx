@@ -71,7 +71,7 @@ const AddressForm = (props) => {
             formData[formElementIdentifier] = addressForm[formElementIdentifier].value;
         }
 
-        console.log(formData);
+        props.onClick(formData);
     }
 
     const checkValidity = (value, rules) => {
@@ -129,7 +129,7 @@ const AddressForm = (props) => {
                     changed={(event) => inputChangedHandler(event, formElement.id)}
                     value={formElement.config.value}/>
             ))}
-            <CTAButton onClick={props.onClick} disabled={!formIsValid}>Next</CTAButton>
+            <CTAButton disabled={!formIsValid}>Next</CTAButton>
         </form>
     );
     
