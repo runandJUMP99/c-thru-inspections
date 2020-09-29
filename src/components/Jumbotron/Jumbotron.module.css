@@ -48,8 +48,8 @@
     .Text,
     .Text1,
     .Text2 {
-        top: 51%;
-        width: 60%;
+        top: 45%;
+        width: 80%;
     }
 
 
@@ -63,5 +63,13 @@
     .Text1 p,
     .Text2 p {
         font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 1000px) {
+    .Text,
+    .Text1,
+    .Text2 {
+        width: 60%;
     }
 }
