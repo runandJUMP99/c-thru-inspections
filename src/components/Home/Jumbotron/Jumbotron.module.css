@@ -7,7 +7,8 @@
 
 .Image1,
 .Image2,
-.Image3 {
+.Image3,
+.Image4 {
     background: linear-gradient(to top,rgba(0, 0, 0, 0.4) 35%, transparent), 
     url("https://firebasestorage.googleapis.com/v0/b/c-thru-inspections.appspot.com/o/pexels-pixabay-259588.jpg?alt=media&token=c96c34e4-8647-4511-a2e6-2036c5896476") 40%/cover no-repeat border-box;
     height: 100vh;
@@ -21,12 +22,15 @@
 
 .Image3 {
     background: linear-gradient(to top,rgba(0, 0, 0, 0.4) 35%, transparent), 
+    url("https://firebasestorage.googleapis.com/v0/b/c-thru-inspections.appspot.com/o/palm-trees-4392365_1920.jpg?alt=media&token=5aa567e0-0b9b-4dde-8db3-bb52d3002fd5") 45%/cover no-repeat border-box;
+}
+
+.Image4 {
+    background: linear-gradient(to top,rgba(0, 0, 0, 0.4) 35%, transparent), 
     url("https://firebasestorage.googleapis.com/v0/b/c-thru-inspections.appspot.com/o/architecture-1836070_1920.jpg?alt=media&token=e77647b6-2e12-4d81-b4d4-ae23531ba914") 42%/cover no-repeat border-box;
 }
 
-.Text,
-.Text1,
-.Text2 {
+.Text {
     color: #ecf4f3;
     left: 0;
     margin: auto;
@@ -45,31 +49,23 @@
 }
 
 @media (min-width: 700px) {
-    .Text,
-    .Text1,
-    .Text2 {
+    .Text {
         top: 45%;
         width: 80%;
     }
 
 
-    .Text h1,
-    .Text1 h1,
-    .Text2 h1 {
+    .Text h1 {
         font-size: 3rem;
     }
 
-    .Text p,
-    .Text1 p,
-    .Text2 p {
+    .Text p {
         font-size: 1.5rem;
     }
 }
 
 @media (min-width: 1000px) {
-    .Text,
-    .Text1,
-    .Text2 {
+    .Text {
         width: 60%;
     }
 }

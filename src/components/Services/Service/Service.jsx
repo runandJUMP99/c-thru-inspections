@@ -1,23 +1,15 @@
-import React, {useState} from "react";
+import React from "react";
+
+import CTAButton from "../../UI/CTAButton/CTAButton";
 
 import classes from "./Service.module.css";
 
 const Service = (props) => {
-    const [iconColor, setIconColor] = useState("");
-
-    function handleMouseOver() {
-        setIconColor("white");
-    }
-
-    function handleMouseOut() {
-        setIconColor("");
-    }
-
     return (
-        <div onMouseOver={handleMouseOver} onMouseOut={handleMouseOut} className={classes.Service}>
-            <i className={props.icon} style={{color: iconColor}}></i>
-            <h3>{props.service}</h3>
+        <div className={classes.Service}>
+            <h2>{props.title}</h2>
             <p>{props.description}</p>
+            <CTAButton>Book Your Inspection</CTAButton>
         </div>
     );
 }

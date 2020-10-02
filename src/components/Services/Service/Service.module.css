@@ -1,36 +1,7 @@
 .Service {
-    background: white;
-    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.3);
+    width: 30%;
+}
+
+.Service h2 {
     color: #006a71;
-    cursor: pointer;
-    margin: 1rem auto;
-    max-width: 330px;
-    padding: 1.5rem;
-    text-align: center;
-    transition: all 0.2s ease-out;
-    width: 90%;
-}
-
-.Service:hover {
-    background: #ff7e67;
-    box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.3);
-    color: #ecf4f3;
-}
-
-.Service i {
-    color: #ff7e67;
-    font-size: 3.5rem;
-    margin: 1rem;
-    transition: all 0.2s ease-out;
-}
-
-.Service h3 {
-    margin-bottom: 1rem;
-}
-
-@media (min-width: 700px) {
-    .Service {
-        margin: 1rem 0;
-        width: 30%;
-    }
 }

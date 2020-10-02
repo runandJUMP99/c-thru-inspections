@@ -1,6 +1,6 @@
 import React from "react";
 
-import CTAButton from "../UI/CTAButton/CTAButton";
+import CTAButton from "../../UI/CTAButton/CTAButton";
 
 import classes from "./Jumbotron.module.css";
 
@@ -13,6 +13,7 @@ const Jumbotron = () => {
                         <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
                         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
                     </ol>
                     <div className="carousel-inner">
                         <div className="carousel-item active">
@@ -26,8 +27,8 @@ const Jumbotron = () => {
                         </div>
                         <div className="carousel-item">
                             <div className={classes.Image2}>
-                                <div className={classes.Text1}>
-                                    <h1>New Home Inspections</h1>
+                                <div className={classes.Text}>
+                                    <h1>New Home Inspection</h1>
                                     <p>Looking to buy a home? Allow us make sure it's up to your standards</p>
                                     <CTAButton>Schedule Your Inspection</CTAButton>
                                 </div>
@@ -35,7 +36,16 @@ const Jumbotron = () => {
                         </div>
                         <div className="carousel-item">
                             <div className={classes.Image3}>
-                                <div className={classes.Text2}>
+                                <div className={classes.Text}>
+                                    <h1>Wind Mitigation Inspection</h1>
+                                    <p>Learn how this inspection can help you save money!</p>
+                                    <CTAButton>Schedule Your Inspection</CTAButton>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="carousel-item">
+                            <div className={classes.Image4}>
+                                <div className={classes.Text}>
                                     <h1>Superior Service</h1>
                                     <p>Quality inspections. Quality customer service</p>
                                     <CTAButton>Schedule Your Inspection</CTAButton>

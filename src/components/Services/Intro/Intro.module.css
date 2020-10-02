@@ -1,0 +1,18 @@
+.Intro {
+    background: #123d3a;
+    display: flex;
+    padding-top: 113px;
+}
+
+.Intro img {
+    width: 30%;
+}
+
+.Text {
+    color: white;
+    font-size: 1.2rem;
+    line-height: 2;
+    margin: auto;
+    text-align: center;
+    width: 50%;
+}

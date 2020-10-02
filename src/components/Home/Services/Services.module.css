@@ -1,0 +1,48 @@
+.Services {
+    margin: auto;
+    max-width: 1300px;
+    padding: 5rem 1rem;
+    text-align: center;
+}
+
+.Services h1 {
+    color: white;
+    margin-bottom: 3rem;
+}
+
+.ServicesGroup {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.Logos {
+    display: flex;
+    justify-content: space-between;
+    margin: 4rem auto 0;
+    width: 100%;
+}
+
+.Logos img {
+    max-width: 275px;
+    width: 30%;
+}
+
+.ServicesGroup div {
+    align-self: stretch;
+}
+
+@media (min-width: 700px) {
+    .Services {
+        padding: 8rem 3rem;
+    }
+
+    .ServicesGroup {
+        flex-direction: row;
+    }
+
+    .Logos img {
+        width: 20%;
+    }
+}

@@ -1,10 +1,10 @@
 import React, {useState} from "react";
 import emailjs from "emailjs-com";
 
-import CTAButton from "../../UI/CTAButton/CTAButton";
-import Input from "../../UI/Input/Input";
+import CTAButton from "../../../UI/CTAButton/CTAButton";
+import Input from "../../../UI/Input/Input";
 import ReCAPTCHA from "react-google-recaptcha";
-import Spinner from "../../UI/Spinner/Spinner";
+import Spinner from "../../../UI/Spinner/Spinner";
 
 import classes from "./ContactUs.module.css";
 
