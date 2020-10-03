@@ -1,7 +1,6 @@
 import React from "react";
 
 import About from "./About/About";
-import CTASection from "./CTASection/CTASection";
 import Jumbotron from "./Jumbotron/Jumbotron";
 import Reports from "./Reports/Reports";
 import Services from "./Services/Services";
@@ -15,7 +14,6 @@ const Home = () => {
             <About />
             <Services />
             <Reports />
-            <CTASection />
         </div>
     );
 }

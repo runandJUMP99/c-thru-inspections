@@ -1,0 +1,34 @@
+.Bundle {
+    background: linear-gradient(to top,rgba(0, 0, 0, 0.4) 35%, transparent), 
+    url("https://firebasestorage.googleapis.com/v0/b/c-thru-inspections.appspot.com/o/condominium-690086_1920.jpg?alt=media&token=29ff3c4d-0310-44e5-ba48-192ef0e25cb8") 40%/cover no-repeat border-box;
+    background-attachment: fixed;
+    margin: auto;
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+.Text {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.5);
+    margin: auto;
+    padding: 2rem;
+}
+
+.Text h1 {
+    color: #006a71;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+.Text p {
+    font-size: 1.5rem;
+    margin: 2rem auto 0;
+    width: 70%;
+}
+
+@media (min-width: 700px) {
+    .Text {
+        width: 60%;
+    }
+}

@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 
-import CTAButton from "../../../../UI/CTAButton/CTAButton";
-import Input from "../../../../UI/Input/Input";
+import CTAButton from "../../../UI/CTAButton/CTAButton";
+import Input from "../../../UI/Input/Input";
 
 import classes from "./ClientForm.module.css";
 

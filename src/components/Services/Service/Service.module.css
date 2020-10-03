@@ -1,7 +1,33 @@
 .Service {
-    width: 30%;
+    background: #ecf4f3;
+    border-radius: 16px;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.5);
+    margin: 0 0.5rem 2rem;
+    max-width: 350px;
+    padding: 1.5rem;
+    text-align: center;
 }
 
 .Service h2 {
     color: #006a71;
+}
+
+.Service i {
+    background: #006a71;
+    border-radius: 50%;
+    color: white;
+    font-size: 2rem;
+    margin: 1rem; 
+    padding: 1rem;
+}
+
+.Service h3 {
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 900px) {
+    .Service {
+        width: 30%;
+    }
 }

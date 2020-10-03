@@ -1,11 +1,19 @@
-.Services {
+.ServiceGroup {
     background: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 8rem 1rem;
 }
 
-.ServiceGroup {
-    display: flex;
-    justify-content: space-between;
-    margin: auto;
-    padding: 8rem 3rem;
-    width: 90%;
+@media (min-width: 900px) {
+    .ServiceGroup {
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 1000px) {
+    .ServiceGroup {
+        padding: 8rem 3rem;
+    }
 }

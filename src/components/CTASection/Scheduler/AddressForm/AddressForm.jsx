@@ -1,16 +1,16 @@
 import React, {useState} from "react";
 
-import CTAButton from "../../../../UI/CTAButton/CTAButton";
-import Input from "../../../../UI/Input/Input";
+import CTAButton from "../../../UI/CTAButton/CTAButton";
+import Input from "../../../UI/Input/Input";
 
-import classes from "./HouseForm.module.css";
+import classes from "./AddressForm.module.css";
 
-const HouseForm = (props) => {
-    const [houseForm, setHouseForm] = useState({
-        year: {
+const AddressForm = (props) => {
+    const [addressForm, setAddressForm] = useState({
+        street: {
             elementType: "input",
             elementConfig:{
-                placeholder: "Year Build",
+                placeholder: "Street Address",
                 type: "text"
             },
             value: "",
@@ -20,10 +20,10 @@ const HouseForm = (props) => {
             valid: false,
             touched: false
         },
-        squareFeet: {
+        city: {
             elementType: "input",
             elementConfig:{
-                placeholder: "Square Feet",
+                placeholder: "City",
                 type: "text"
             },
             value: "",
@@ -33,10 +33,10 @@ const HouseForm = (props) => {
             valid: false,
             touched: false
         },
-        foundation: {
+        state: {
             elementType: "input",
             elementConfig:{
-                placeholder: "Foundation Type",
+                placeholder: "State",
                 type: "text"
             },
             value: "",
@@ -46,75 +46,10 @@ const HouseForm = (props) => {
             valid: false,
             touched: false
         },
-        client: {
+        zip: {
             elementType: "input",
             elementConfig:{
-                placeholder: "Client Attending",
-                type: "text"
-            },
-            value: "",
-            validation: {
-                required: true
-            },
-            valid: false,
-            touched: false
-        },
-        occupied: {
-            elementType: "input",
-            elementConfig:{
-                placeholder: "Occupied",
-                type: "text"
-            },
-            value: "",
-            validation: {
-                required: true
-            },
-            valid: false,
-            touched: false
-        },
-        utilities: {
-            elementType: "input",
-            elementConfig:{
-                placeholder: "Utilities",
-                type: "text"
-            },
-            value: "",
-            validation: {
-                required: true
-            },
-            valid: false,
-            touched: false
-        },
-        lockboxCode: {
-            elementType: "input",
-            elementConfig:{
-                placeholder: "Lockbox Code",
-                type: "text"
-            },
-            value: "",
-            validation: {
-                required: true
-            },
-            valid: false,
-            touched: false
-        },
-        gateCode: {
-            elementType: "input",
-            elementConfig:{
-                placeholder: "Gate Code",
-                type: "text"
-            },
-            value: "",
-            validation: {
-                required: true
-            },
-            valid: false,
-            touched: false
-        },
-        specialInstructions: {
-            elementType: "input",
-            elementConfig:{
-                placeholder: "Special Instructions",
+                placeholder: "Zip Code",
                 type: "text"
             },
             value: "",
@@ -132,11 +67,11 @@ const HouseForm = (props) => {
         event.preventDefault();
         const formData = {};
         
-        for (let formElementIdentifier in houseForm) {
-            formData[formElementIdentifier] = houseForm[formElementIdentifier].value;
+        for (let formElementIdentifier in addressForm) {
+            formData[formElementIdentifier] = addressForm[formElementIdentifier].value;
         }
 
-        console.log(formData);
+        props.onClick(formData);
     }
 
     const checkValidity = (value, rules) => {
@@ -151,7 +86,7 @@ const HouseForm = (props) => {
 
     const inputChangedHandler = (event, inputIdentifier) => {
         const updatedOrderForm = {
-            ...houseForm
+            ...addressForm
         }
         
         const updatedFormElement = {
@@ -168,16 +103,16 @@ const HouseForm = (props) => {
         for (let inputIdentifier in updatedOrderForm) {
             formIsValid = updatedOrderForm[inputIdentifier].valid && formIsValid;
         }
-        setHouseForm(updatedOrderForm);
+        setAddressForm(updatedOrderForm);
         setFormIsValid(formIsValid);
     }
 
     const formElementsArray = [];
 
-    for (let key in houseForm) {
+    for (let key in addressForm) {
         formElementsArray.push({
             id: key,
-            config: houseForm[key]
+            config: addressForm[key]
         });
     }
 
@@ -194,16 +129,16 @@ const HouseForm = (props) => {
                     changed={(event) => inputChangedHandler(event, formElement.id)}
                     value={formElement.config.value}/>
             ))}
-            <CTAButton onClick={props.onClick} disabled={!formIsValid}>Next</CTAButton>
+            <CTAButton disabled={!formIsValid}>Next</CTAButton>
         </form>
     );
-
+    
     return (
-        <div className={classes.HouseForm}>
-            <h4>Enter House Information</h4>
+        <div className={classes.AddressForm}>
+            <h4>Enter Your Address</h4>
             {form}
         </div>
     );
 }
 
-export default HouseForm;
+export default AddressForm;

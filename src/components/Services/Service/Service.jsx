@@ -8,7 +8,9 @@ const Service = (props) => {
     return (
         <div className={classes.Service}>
             <h2>{props.title}</h2>
+            <i className={props.icon}></i>
             <p>{props.description}</p>
+            <h3>${props.price}</h3>
             <CTAButton>Book Your Inspection</CTAButton>
         </div>
     );

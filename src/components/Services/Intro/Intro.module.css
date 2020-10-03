@@ -1,18 +1,73 @@
 .Intro {
     background: #123d3a;
     display: flex;
-    padding-top: 113px;
+    overflow: hidden;
+    padding-top: 151px;
+    position: relative;
 }
 
 .Intro img {
-    width: 30%;
+    position: absolute;
+    width: 100%;
 }
 
 .Text {
     color: white;
-    font-size: 1.2rem;
     line-height: 2;
     margin: auto;
+    padding: 3rem 1rem;
     text-align: center;
-    width: 50%;
+    width: 90%;
+    z-index: 5;
+}
+
+.Filter {
+    background: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+}
+
+@media (min-width: 441px) {
+    .Intro {   
+        padding-top: 156px;
+    }
+
+    .Intro img {
+        top: -5rem;
+    }
+}
+
+@media (min-width: 445px) {
+    .Intro {
+        padding-top: 110px;
+    }
+}
+
+@media (min-width: 685px) {
+    .Intro img {
+        height: initial;
+        position: initial;
+        width: 40%;
+    }
+
+    .Filter {
+        display: none;
+    }
+}
+
+@media (min-width: 960px) {
+    .Intro {
+        padding-top: 113px;
+    }
+
+    .Intro img {
+        width: 30%;
+    }
+
+    .Text {
+        font-size: 1.2rem;
+        width: 60%;
+    }
 }
