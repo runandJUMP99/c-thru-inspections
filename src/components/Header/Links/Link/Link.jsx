@@ -5,11 +5,23 @@ import {NavLink} from "react-router-dom";
 import classes from "./Link.module.css";
 
 const Link = (props) => {
-    return (
-        <li onClick={props.onClick} className={classes.Link}>
-            <NavLink to={props.link}>
+    let content = (
+        <NavLink to={props.link}>
+            {props.name}
+        </NavLink>
+    );
+    
+    if (props.link.includes("#")) {
+        content = (
+            <a href={"/" + props.link}>
                 {props.name}
-            </NavLink>
+            </a>
+        );
+    }
+
+    return (
+        <li onClick={() => props.onClick(props.name)} className={classes.Link}>
+            {content}
         </li>
     );
 }

@@ -1,7 +1,6 @@
 .Service {
     background: white;
     box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.3);
-    color: #006a71;
     cursor: pointer;
     margin: 1rem auto;
     max-width: 330px;
@@ -14,6 +13,14 @@
 .Service:hover {
     background: #ff7e67;
     box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.3);
+}
+
+.Service a {
+    color: #006a71;
+    text-decoration: none;
+}
+
+.Service a:hover {
     color: #ecf4f3;
 }
 

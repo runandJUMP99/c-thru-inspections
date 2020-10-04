@@ -9,24 +9,24 @@
 .Image2,
 .Image3,
 .Image4 {
-    background: linear-gradient(to top,rgba(0, 0, 0, 0.4) 35%, transparent), 
+    background: linear-gradient(to top,rgba(0, 0, 0, 0.5) 35%, transparent), 
     url("https://firebasestorage.googleapis.com/v0/b/c-thru-inspections.appspot.com/o/pexels-pixabay-259588.jpg?alt=media&token=c96c34e4-8647-4511-a2e6-2036c5896476") 40%/cover no-repeat border-box;
     height: 100vh;
     width: 100%
 }
 
 .Image2 {
-    background: linear-gradient(to top,rgba(0, 0, 0, 0.4) 35%, transparent), 
+    background: linear-gradient(to top,rgba(0, 0, 0, 0.5) 35%, transparent), 
     url("https://firebasestorage.googleapis.com/v0/b/c-thru-inspections.appspot.com/o/new-home-1530833_1920.jpg?alt=media&token=e7084ee2-b7ff-4064-ba41-9b29449dc71c") 3%/cover no-repeat border-box;
 }
 
 .Image3 {
-    background: linear-gradient(to top,rgba(0, 0, 0, 0.4) 35%, transparent), 
+    background: linear-gradient(to top,rgba(0, 0, 0, 0.5) 35%, transparent), 
     url("https://firebasestorage.googleapis.com/v0/b/c-thru-inspections.appspot.com/o/palm-trees-4392365_1920.jpg?alt=media&token=5aa567e0-0b9b-4dde-8db3-bb52d3002fd5") 45%/cover no-repeat border-box;
 }
 
 .Image4 {
-    background: linear-gradient(to top,rgba(0, 0, 0, 0.4) 35%, transparent), 
+    background: linear-gradient(to top,rgba(0, 0, 0, 0.5) 35%, transparent), 
     url("https://firebasestorage.googleapis.com/v0/b/c-thru-inspections.appspot.com/o/architecture-1836070_1920.jpg?alt=media&token=e77647b6-2e12-4d81-b4d4-ae23531ba914") 42%/cover no-repeat border-box;
 }
 

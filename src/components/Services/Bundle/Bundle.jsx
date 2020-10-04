@@ -10,7 +10,7 @@ const Bundle = () => {
             <div className={classes.Text}>
                 <h1>Insurance Inspection Combo</h1>
                 <p>Combine a Wind Mitigation Inspection and 4-Point Inspection for only</p>
-                <h1>$125</h1>
+                <h1>$150</h1>
                 <CTAButton>Book You Inspection</CTAButton>
             </div>
         </div>

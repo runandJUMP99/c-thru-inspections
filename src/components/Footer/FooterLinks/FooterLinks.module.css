@@ -9,6 +9,9 @@
 
 @media (min-width: 700px) {
     .FooterLinks {
+        align-self: stretch;
         flex-direction: column;
+        justify-content: stretch;
+        margin-bottom: 0;
     }
 }

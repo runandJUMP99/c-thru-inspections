@@ -19,8 +19,8 @@ const Jumbotron = () => {
                         <div className="carousel-item active">
                             <div className={classes.Image1}>
                                 <div className={classes.Text}>
-                                    <h1>WHEN WAS YOUR LAST <em>inspection?</em></h1>
-                                    <p>Allow one of our fully licensed inspectors to asses your home</p>
+                                    <h1>INSPECTIONS STARTING AT ONLY <em>$275</em></h1>
+                                    <p>Make the smart choice by having your home inspected annually.</p>
                                     <CTAButton>Schedule Your Inspection</CTAButton>
                                 </div>
                             </div>
@@ -29,7 +29,7 @@ const Jumbotron = () => {
                             <div className={classes.Image2}>
                                 <div className={classes.Text}>
                                     <h1>New Home Inspection</h1>
-                                    <p>Looking to buy a home? Allow us make sure it's up to your standards</p>
+                                    <p>Looking to buy a home? Allow us make sure it's up to your standards.</p>
                                     <CTAButton>Schedule Your Inspection</CTAButton>
                                 </div>
                             </div>
@@ -38,7 +38,7 @@ const Jumbotron = () => {
                             <div className={classes.Image3}>
                                 <div className={classes.Text}>
                                     <h1>Wind Mitigation Inspection</h1>
-                                    <p>Learn how this inspection can help you save money!</p>
+                                    <p>Learn how this inspection could help you save money!</p>
                                     <CTAButton>Schedule Your Inspection</CTAButton>
                                 </div>
                             </div>
@@ -47,7 +47,7 @@ const Jumbotron = () => {
                             <div className={classes.Image4}>
                                 <div className={classes.Text}>
                                     <h1>Superior Service</h1>
-                                    <p>Quality inspections. Quality customer service</p>
+                                    <p>Quality inspections. Affordable Prices.</p>
                                     <CTAButton>Schedule Your Inspection</CTAButton>
                                 </div>
                             </div>

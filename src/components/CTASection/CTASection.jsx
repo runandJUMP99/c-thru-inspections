@@ -18,7 +18,7 @@ const CTASection = () => {
     }
 
     return (
-        <div id="contact-us" className={classes.CTASection}>
+        <div id="contactus" className={classes.CTASection}>
             <Fade>
                 <ul>
                     <li onClick={() => handleClick("contact")} style={{
