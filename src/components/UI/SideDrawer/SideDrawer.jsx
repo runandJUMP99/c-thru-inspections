@@ -20,7 +20,7 @@ const SideDrawer = (props) => {
         <div className={classes.SideDrawer} style={{
             transform: props.show ? "translateX(0)" : "translateX(-110%)",
         }}>
-            <Logo color="#006a71" />
+            <Logo />
             <nav>
                 <Links onClick={handleClick} />
             </nav>

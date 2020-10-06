@@ -17,7 +17,7 @@ const Header = (props) => {
         <header className={classes.Header}>
             <ContactHeader />
             <div className={classes.MainHeader}>
-                <Logo color="#006a72" />
+                <Logo />
                 <nav>
                     <Links onClick={scrollTop} />
                 </nav>

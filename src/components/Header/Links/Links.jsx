@@ -10,7 +10,7 @@ const Links = (props) => {
             <Link name="Home" link="/" onClick={props.onClick} />
             <Link name="About" link="#aboutus" onClick={props.onClick} />
             <Link name="Services" link="/services" onClick={props.onClick} />
-            <Link name="Contact Us" link="#contactus" onClick={props.onClick} />
+            <Link name="Contact Us" link="/contact" onClick={props.onClick} />
         </ul>
     );
 }

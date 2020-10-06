@@ -1,8 +1,11 @@
 .FooterHeader {
+    font-size: 1.2rem;
     margin: auto;
     text-align: center;
 }
 
-.FooterHeader {
-    font-size: 1.2rem;
+.FooterHeader img {
+    margin: 3rem auto 1rem;
+    max-width: 250px;
+    width: 50%;
 }

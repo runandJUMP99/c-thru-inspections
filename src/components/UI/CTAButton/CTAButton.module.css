@@ -16,6 +16,11 @@
 }
 
 .CTAButton:disabled {
-    background: #68b0ab;
+    background: #ccc;
     cursor: not-allowed;
+}
+
+.CTAButton a {
+    color: inherit;
+    text-decoration: none;
 }

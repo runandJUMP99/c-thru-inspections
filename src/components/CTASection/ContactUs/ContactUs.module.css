@@ -2,7 +2,6 @@
     color: #ecf4f3;
     margin: auto;
     max-width: 600px;
-    width: 90%;
 }
 
 .ContactUs h4 {
@@ -21,12 +20,6 @@
     display: flex;
     justify-content: center;
     margin: 1rem auto;
-}
-
-@media (min-width: 700px) {
-    .ContactUs {
-        width: 70%;
-    }
 }
 
 @keyframes appear {

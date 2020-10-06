@@ -10,9 +10,9 @@ const CTASection = () => {
     const [content, setContent] = useState(true);
 
     function handleClick(selection) {
-        if (selection === "contact") {
+        if (selection === "schedule") {
             setContent(true);
-        } else if (selection === "schedule") {
+        } else if (selection === "contact") {
             setContent(false)
         }
     }
@@ -21,16 +21,18 @@ const CTASection = () => {
         <div id="contactus" className={classes.CTASection}>
             <Fade>
                 <ul>
-                    <li onClick={() => handleClick("contact")} style={{
+                    <li onClick={() => handleClick("schedule")} style={{
                         background: content && "#ff7e67",
                         color: content && "white",
-                    }}>Contact Us</li>
-                    <li onClick={() => handleClick("schedule")} style={{
+                    }}>Schedule Inspection</li>
+                    <li onClick={() => handleClick("contact")} style={{
                         background: !content && "#ff7e67",
                         color: !content && "white",
-                    }}>Schedule Inspection</li>
+                    }}>Contact Us</li>
                 </ul>
-                {content ? <ContactUs /> : <Scheduler />}
+                <div className={classes.Content}>
+                    {content ? <Scheduler /> : <ContactUs />}
+                </div>
             </Fade>
         </div>
     );

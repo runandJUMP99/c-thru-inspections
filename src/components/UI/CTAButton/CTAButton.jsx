@@ -5,7 +5,7 @@ import classes from "./CTAButton.module.css";
 const CTAButton = (props) => {
     return (
         <button className={classes.CTAButton} disabled={props.disabled}>
-            {props.children}
+            <a href={props.link}>{props.children}</a>
         </button> 
     );
 }

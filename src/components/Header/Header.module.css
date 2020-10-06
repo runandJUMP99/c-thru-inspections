@@ -6,17 +6,23 @@
     z-index: 20;
 }
 
+.Header nav {
+    display: none;
+}
+
 .MainHeader {
     align-items: center;
     background: white;
     box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.5);
     display: flex;
+    font-size: 1.4rem;
     justify-content: space-between;
     padding: 0.5rem 0;
 }
 
-.Header nav {
-    display: none;
+.MainHeader img {
+    max-width: 250px;
+    width: 50%;
 }
 
 @media (min-width: 730px) {

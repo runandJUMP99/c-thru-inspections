@@ -11,7 +11,7 @@ const Service = (props) => {
             <i className={props.icon}></i>
             <p>{props.description}</p>
             <h3><p className={classes.StartingAt}>{props.startingAt}</p>${props.price}</h3>
-            <CTAButton>Book Your Inspection</CTAButton>
+            <CTAButton link="#contactus">Book Your Inspection</CTAButton>
         </div>
     );
 }

@@ -1,6 +1,7 @@
 import React from "react";
 
 import Bundle from "./Bundle/Bundle";
+import CTASection from "../CTASection/CTASection";
 import Intro from "./Intro/Intro";
 import Service from "./Service/Service";
 
@@ -16,6 +17,7 @@ const Services = () => {
                 <Service title="4-Point Inspection" icon="fas fa-bullseye" price="100" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel magna egestas, semper augue ut, cursus enim. Aliquam tincidunt scelerisque orci. Suspendisse potenti. Praesent quis volutpat lorem. Maecenas libero quam, semper in eleifend sed, auctor mattis felis. Etiam dapibus aliquam sapien, non ornare nisl suscipit eget." />
             </div>
             <Bundle />
+            <CTASection />
         </div>
     );
 }

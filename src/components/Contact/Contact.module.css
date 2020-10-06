@@ -1,11 +1,11 @@
-.CTASection {
-    margin: auto;
-    padding: 5rem 1rem;
+.Contact {
+    margin: 8rem auto 3rem;
+    padding: 1rem;
     text-align: center;
     width: 90%;
 }
 
-.CTASection ul {
+.Contact ul {
     align-items: center;
     display: flex;
     font-size: 1.2rem;
@@ -16,7 +16,7 @@
     padding: 0;
 }
 
-.CTASection li {
+.Contact li {
     border-radius: 8px;
     cursor: pointer;
     padding: 0.25rem 0.5rem;
@@ -24,12 +24,13 @@
 }
 
 @media (min-width: 700px) {
-    .CTASection {
-        padding: 8rem 3rem;
+    .Contact {
+        margin: 3rem auto 0;
+        padding: 8rem 3rem 3rem;
         width: 70%;
     }
     
-    .CTASection ul {
+    .Contact ul {
         font-size: 1.5rem;
         justify-content: space-between;
         margin-bottom: 3rem;

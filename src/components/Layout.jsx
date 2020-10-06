@@ -1,7 +1,6 @@
 import React, {useState} from "react";
 
 import Backdrop from "./UI/Backdrop/Backdrop";
-import CTASection from "./CTASection/CTASection";
 import Footer from "./Footer/Footer";
 import Header from "./Header/Header";
 import SideDrawer from "./UI/SideDrawer/SideDrawer";
@@ -23,7 +22,6 @@ const Layout = (props) => {
             <main>
                 {props.children}
             </main>
-            <CTASection />
             <Footer />
         </div>
     );
