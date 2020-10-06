@@ -5,14 +5,11 @@
     list-style: none;
     margin-bottom: 2rem;
     padding: 0;
-    width: 33%;
 }
 
 @media (min-width: 700px) {
     .FooterLinks {
-        align-self: stretch;
         flex-direction: column;
-        justify-content: stretch;
         margin-bottom: 0;
     }
 }
