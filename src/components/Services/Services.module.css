@@ -3,17 +3,17 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 8rem 1rem;
+    padding: 5rem 1rem;
 }
 
 @media (min-width: 900px) {
     .ServiceGroup {
-        justify-content: space-between;
+        justify-content: space-around;
     }
 }
 
 @media (min-width: 1000px) {
     .ServiceGroup {
-        padding: 8rem 3rem;
+        padding: 5rem 3rem;
     }
 }

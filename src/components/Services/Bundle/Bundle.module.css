@@ -3,7 +3,7 @@
     url("https://firebasestorage.googleapis.com/v0/b/c-thru-inspections.appspot.com/o/condominium-690086_1920.jpg?alt=media&token=29ff3c4d-0310-44e5-ba48-192ef0e25cb8") 40%/cover no-repeat border-box;
     background-attachment: fixed;
     margin: auto;
-    padding: 4rem 1rem;
+    padding: 5rem 1rem;
     text-align: center;
 }
 
@@ -16,15 +16,14 @@
 }
 
 .Text h1 {
-    color: #006a71;
+    color: #143d59;
     font-weight: bold;
-    margin: 1rem 0;
+    margin-bottom: 2rem;
 }
 
 .Text p {
     font-size: 1.5rem;
     margin: 2rem auto 0;
-    width: 90%;
 }
 
 @media (min-width: 700px) {

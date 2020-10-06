@@ -1,5 +1,5 @@
 .Footer {
-    background: #006a71;
+    background: #143d59;
     color: #ecf4f3;
 }
 
@@ -7,10 +7,10 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 2rem auto;
-    max-width: 650px;
-    padding: 0 2rem;
+    max-width: 1000px;
+    padding: 0 1rem;
 }
 
 @media (min-width: 700px) {

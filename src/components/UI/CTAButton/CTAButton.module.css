@@ -1,5 +1,5 @@
 .CTAButton {
-    background: #006a71;
+    background: #143d59;
     border: none;
     border-radius: 8px;
     color: #ecf4f3;
@@ -11,7 +11,7 @@
 }
 
 .CTAButton:hover {
-    background: #68b0ab;
+    background: #255d83;
     color: #ecf4f3;
 }
 

@@ -20,11 +20,11 @@ const Contact = () => {
         <div className={classes.Contact}>
             <ul>
                 <li onClick={() => handleClick("contact")} style={{
-                    background: content && "#ff7e67",
+                    background: content && "#f4b41a",
                     color: content && "white",
                 }}>Contact Us</li>
                 <li onClick={() => handleClick("schedule")} style={{
-                    background: !content && "#ff7e67",
+                    background: !content && "#f4b41a",
                     color: !content && "white",
                 }}>Schedule Inspection</li>
             </ul>

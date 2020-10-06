@@ -1,6 +1,6 @@
 .ContactHeader {
     align-items: center;
-    background: #006a71;
+    background: #143d59;
     display: flex;
     font-size: 0.85rem;
     justify-content: center;
@@ -24,7 +24,7 @@
     margin-right: 0.5rem
 }
 
-@media (max-width: 400px) {
+@media (max-width: 430px) {
     .ContactHeader {
         font-size: 0.65rem;
     } 

@@ -10,7 +10,7 @@ const FooterLinks = () => {
             <FooterLink name="Home" link="/" />
             <FooterLink name="About" link="#aboutus" />
             <FooterLink name="Services" link="#services" />
-            <FooterLink name="Terms" link="" />
+            {/* <FooterLink name="Terms" link="" /> */}
             <FooterLink name="Contact Us" link="#contactus" />
         </ul>
     );

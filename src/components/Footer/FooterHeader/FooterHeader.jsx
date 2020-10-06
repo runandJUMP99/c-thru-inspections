@@ -7,7 +7,9 @@ import classes from "./FooterHeader.module.css";
 const FooterHeader = () => {
     return (
         <div className={classes.FooterHeader}>
-            <Logo type="dark" />
+            <div className={classes.Logo}>
+                <Logo />
+            </div>
             <p>Trusted - Reliable - Secure</p>
         </div>
     );

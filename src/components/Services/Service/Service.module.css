@@ -1,7 +1,11 @@
 .Service {
+    align-items: center;
     background: #ecf4f3;
     border-radius: 16px;
     box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     margin: 0 0.5rem 2rem;
     max-width: 350px;
     padding: 1.5rem;
@@ -9,11 +13,11 @@
 }
 
 .Service h2 {
-    color: #006a71;
+    color: #143d59;
 }
 
 .Service i {
-    background: #006a71;
+    background: #143d59;
     border-radius: 50%;
     color: white;
     font-size: 2rem;
@@ -29,6 +33,12 @@
 .StartingAt {
     font-size: 1rem;
     margin-bottom: 0.25rem;
+}
+
+.Disclaimer {
+    font-size: 0.75rem;
+    font-style: italic;
+    margin: 1.5rem auto 0;
 }
 
 @media (min-width: 900px) {

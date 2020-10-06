@@ -19,9 +19,14 @@
     margin-right: 0.5rem;
 }
 
+.ContactUs {
+    display: flex;
+    justify-content: space-between;
+}
+
 @media (min-width: 700px) {
     .FooterContacts {
         text-align: left;
-        width: 40%;
+        width: 66%;
     }
 }

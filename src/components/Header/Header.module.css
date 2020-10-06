@@ -21,8 +21,9 @@
 }
 
 .MainHeader img {
+    margin-left: 1rem;
     max-width: 250px;
-    width: 50%;
+    width: 60%;
 }
 
 @media (min-width: 730px) {
