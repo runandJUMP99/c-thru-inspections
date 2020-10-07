@@ -8,7 +8,7 @@ import classes from "./Services.module.css";
 const Services = () => {
     return (
         <div id="services" className={classes.Services}>
-            <Fade bottom>
+            {/* <Fade bottom> */}
                 <h1>What We Offer</h1>
                 <div className={classes.ServicesGroup}>
                     <Service icon={"fas fa-house-damage"} service="Home Inspection" description="For new or existing home owners, inspections provide our clients knowledge and information on the current state of one of their largest investments." />
@@ -20,7 +20,7 @@ const Services = () => {
                     <img src="https://firebasestorage.googleapis.com/v0/b/c-thru-inspections.appspot.com/o/Wind%20Mitigation-Logo.png?alt=media&token=11296278-04da-4455-aef3-fb79b780f079" alt="Wind Mitigation Logo"/>
                     <img src="https://firebasestorage.googleapis.com/v0/b/c-thru-inspections.appspot.com/o/Four%20Point-Logo.png?alt=media&token=cf4719db-2c65-471c-b284-08def6a13364" alt="Four Point Logo"/>
                 </div>
-            </Fade>
+            {/* </Fade> */}
         </div>
     );
 }

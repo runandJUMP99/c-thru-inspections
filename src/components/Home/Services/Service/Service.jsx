@@ -1,6 +1,8 @@
 import React, {useState} from "react";
 import {NavLink} from "react-router-dom";
 
+import Fade from "react-reveal/Fade";
+
 import classes from "./Service.module.css";
 
 const Service = (props) => {
@@ -20,13 +22,15 @@ const Service = (props) => {
     }
 
     return (
-        <div onClick={handleClick} onMouseOver={handleMouseOver} onMouseOut={handleMouseOut} className={classes.Service}>
-            <NavLink to="/services">
-                <i className={props.icon} style={{color: color}}></i>
-                <h3 style={{color: color}}>{props.service}</h3>
-                <p style={{color: color}}>{props.description}</p>
-            </NavLink>
-        </div>
+        <Fade bottom>
+            <div onClick={handleClick} onMouseOver={handleMouseOver} onMouseOut={handleMouseOut} className={classes.Service}>
+                <NavLink to="/services">
+                    <i className={props.icon} style={{color: color}}></i>
+                    <h3 style={{color: color}}>{props.service}</h3>
+                    <p style={{color: color}}>{props.description}</p>
+                </NavLink>
+            </div>
+        </Fade>
     );
 }
 
