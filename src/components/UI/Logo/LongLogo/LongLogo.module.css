@@ -1,0 +1,9 @@
+.LongLogo {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.LongLogo:hover {
+    color: initial;
+    text-decoration: none;
+}

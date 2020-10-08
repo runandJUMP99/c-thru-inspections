@@ -3,6 +3,7 @@ import React from "react";
 import ContactHeader from "./ContactHeader/ContactHeader";
 import Links from "./Links/Links";
 import Logo from "../UI/Logo/Logo";
+import LongLogo from "../UI/Logo/LongLogo/LongLogo";
 import ToggleButton from "../UI/ToggleButton/ToggleButton";
 
 import classes from "./Header.module.css";
@@ -17,7 +18,12 @@ const Header = (props) => {
         <header className={classes.Header}>
             <ContactHeader />
             <div className={classes.MainHeader}>
-                <Logo />
+                <div className={classes.Logo}>
+                    <Logo />
+                </div>
+                <div className={classes.LongLogo}>
+                    <LongLogo />
+                </div>
                 <nav>
                     <Links onClick={scrollTop} />
                 </nav>
