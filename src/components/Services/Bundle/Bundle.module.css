@@ -21,9 +21,15 @@
     margin-bottom: 2rem;
 }
 
-.Text p {
+.Description {
     font-size: 1.5rem;
     margin: 2rem auto 0;
+}
+
+.Disclaimer {
+    font-size: 0.85rem;
+    font-style: italic;
+    margin: 1.5rem auto 0;
 }
 
 @media (min-width: 700px) {

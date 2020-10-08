@@ -8,7 +8,7 @@ const Jumbotron = () => {
     return (
         <div id="home" className={classes.Jumbotron}>
             <div className={classes.Carousel}>
-                <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
+                <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel" data-interval="5000">
                     <ol className="carousel-indicators">
                         <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
                         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
