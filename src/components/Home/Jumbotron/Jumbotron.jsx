@@ -19,7 +19,7 @@ const Jumbotron = () => {
                         <div className="carousel-item active">
                             <div className={classes.Image1}>
                                 <div className={classes.Text}>
-                                    <h1>INSPECTIONS STARTING AT ONLY <em>$295</em></h1>
+                                    <h1>HOME INSPECTIONS STARTING AT ONLY <em>$295</em></h1>
                                     <p>Make the smart choice by having your home inspected annually.</p>
                                     <CTAButton link="#contactus">Schedule Your Inspection</CTAButton>
                                 </div>
