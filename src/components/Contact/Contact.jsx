@@ -20,12 +20,12 @@ const Contact = () => {
         <div className={classes.Contact}>
             <ul>
                 <li onClick={() => handleClick("contact")} style={{
-                    background: content && "#f4b41a",
-                    color: content && "white",
+                    background: !content ? "#f4b41a" : "#b68617",
+                    boxShadow: !content && "0px 2px 2px 2px #9e7513"
                 }}>Contact Us</li>
                 <li onClick={() => handleClick("schedule")} style={{
-                    background: !content && "#f4b41a",
-                    color: !content && "white",
+                    background: content ? "#f4b41a" : "#b68617",
+                    boxShadow: content && "0px 2px 2px 2px #9e7513"
                 }}>Schedule Inspection</li>
             </ul>
             <div className={classes.Content}>

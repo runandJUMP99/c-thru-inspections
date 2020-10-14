@@ -1,7 +1,11 @@
 .Services {
+    background: linear-gradient(to top,rgba(0, 0, 0, 0.6) 100%, transparent), 
+    url("https://firebasestorage.googleapis.com/v0/b/c-thru-inspections.appspot.com/o/multi-family-1693707_1920.jpg?alt=media&token=337f7d3a-a36b-4657-a107-5819170b6991") 40%/cover no-repeat border-box;
+    background-attachment: fixed;
+    box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.5);
     margin: auto;
-    max-width: 1300px;
     padding: 5rem 1rem;
+    position: relative;
     text-align: center;
 }
 
@@ -15,12 +19,15 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin: auto;
+    max-width: 1300px;
 }
 
 .Logos {
     display: flex;
     justify-content: space-between;
     margin: 4rem auto 0;
+    max-width: 1300px;
     width: 100%;
 }
 

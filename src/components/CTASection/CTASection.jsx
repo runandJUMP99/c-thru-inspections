@@ -22,12 +22,12 @@ const CTASection = () => {
             <Fade>
                 <ul>
                     <li onClick={() => handleClick("schedule")} style={{
-                        background: content && "#f4b41a",
-                        color: content && "white",
+                        background: !content ? "#f4b41a" : "#b68617",
+                        boxShadow: !content && "0px 2px 2px 2px #b68617"
                     }}>Schedule Inspection</li>
                     <li onClick={() => handleClick("contact")} style={{
-                        background: !content && "#f4b41a",
-                        color: !content && "white",
+                        background: content ? "#f4b41a" : "#b68617",
+                        boxShadow: content && "0px 2px 2px 2px #b68617"
                     }}>Contact Us</li>
                 </ul>
                 <div className={classes.Content}>

@@ -15,9 +15,23 @@
     color: white;
     line-height: 1.75;
     margin: auto;
-    padding: 3rem 1rem;
+    padding: 1rem;
     text-align: center;
     z-index: 5;
+}
+
+.Text h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.Link {
+    color: #f4b41a;
+}
+
+.Link:hover {
+    color: #ffcc55;
+    text-decoration: none;
 }
 
 .Filter {
@@ -28,16 +42,27 @@
     z-index: 3;
 }
 
-@media (min-width: 750px) {
+@media (min-width: 730px) {
     .Intro {
         padding-top: 85px;
     }
+    
+    .Text {
+        padding: 3rem 1rem;
+    }
+    
+    .Text h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+    }   
+}
 
+@media (min-width: 750px) {
     .Intro img {
         height: initial;
         position: initial;
         width: 40%;
-    }
+    } 
 
     .Filter {
         display: none;

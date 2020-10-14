@@ -1,19 +1,17 @@
 .FooterHeader {
     font-size: 1.2rem;
     margin: auto;
-    padding-top: 3rem;
+    padding-top: 1rem;
     text-align: center;
 }
 
 .Logo {
     align-items: center;
-    background: white;
     display: flex;
     height: 10rem;
     justify-content: center;
     margin: 0 auto 1rem;
-    max-width: 300px;
-    padding: 1.5rem 2rem;
+    max-width: 250px;
     width: 15rem;
 }
 

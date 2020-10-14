@@ -18,7 +18,6 @@
 }
 
 .CTASection li {
-    border-radius: 8px;
     cursor: pointer;
     padding: 0.25rem 0.5rem;
     transition: all 0.2s ease-out;
