@@ -8,7 +8,7 @@ const FooterHeader = () => {
     return (
         <div className={classes.FooterHeader}>
             <div className={classes.Logo}>
-                <Logo />
+                <Logo type="dark" />
             </div>
             <p>Trusted - Reliable - Secure</p>
         </div>

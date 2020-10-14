@@ -15,12 +15,20 @@
     margin: 0 auto 2rem;
     max-width: 600px;
     padding: 0;
+    position: relative;
 }
 
 .Contact li {
     cursor: pointer;
     padding: 0.25rem 0.5rem;
+    position: absolute;
     transition: all 0.2s ease-out;
+}
+
+@media (max-width: 350px) {
+    .Contact ul {
+        font-size: 1rem;
+    }
 }
 
 @media (min-width: 700px) {
