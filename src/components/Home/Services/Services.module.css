@@ -24,6 +24,7 @@
 }
 
 .Logos {
+    align-items: center;
     display: flex;
     justify-content: space-between;
     margin: 4rem auto 0;
