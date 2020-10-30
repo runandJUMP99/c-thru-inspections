@@ -38,8 +38,12 @@
     position: absolute;
     right: 0;
     text-align: center;
-    top: 40%;
+    top: 35%;
     width: 90%;
+}
+
+.Text h1 {
+    font-size: 2rem;
 }
 
 .Bar {
@@ -50,7 +54,7 @@
 
 @media (min-width: 700px) {
     .Text {
-        top: 45%;
+        top: 40%;
         width: 80%;
     }
 
