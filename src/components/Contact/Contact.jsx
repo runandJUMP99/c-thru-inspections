@@ -18,6 +18,8 @@ const Contact = () => {
 
     return (
         <div className={classes.Contact}>
+            <h1>Contact Us or Schedule Your Inspection</h1>
+            <p>Email us with any inquiries or call (407) 813-5064. We would be more than happy to answer your questions or set up an inspection with you. We are looking forward to hearing from you!</p>
             <ul>
                 <li onClick={() => handleClick("contact")} style={{
                     background: !content ? "#f4b41a" : "#b68617",

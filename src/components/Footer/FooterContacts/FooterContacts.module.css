@@ -19,8 +19,14 @@
     margin-right: 0.5rem;
 }
 
+.SocialLinks {
+    display: flex;
+    justify-content: center;
+}
+
 .SocialLink i {
     font-size: 1.2rem;
+    margin-right: 1rem;
 }
 
 @media (min-width: 700px) {
@@ -32,6 +38,10 @@
     .ContactUs {
         display: flex;
         justify-content: space-between;
+    }
+
+    .SocialLinks {
+        justify-content: flex-start;
     }
 }
 

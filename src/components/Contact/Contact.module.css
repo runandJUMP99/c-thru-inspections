@@ -1,9 +1,25 @@
 .Contact {
     color: #ecf4f3;
     margin: 0 auto 3rem;
+    max-width: 800px;
     padding-top: 10rem;
     text-align: center;
     width: 90%;
+}
+
+.Contact h1 {
+    background: #143d59;
+    border-radius: 16px;
+    box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.5);
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+}
+
+.Contact p {
+    border-bottom: 1px solid #ecf4f3;
+    margin-bottom: 4rem;
+    padding-bottom: 1.5rem;
 }
 
 .Contact ul {
@@ -13,7 +29,7 @@
     justify-content: space-between;
     list-style: none;
     margin: 0 auto 2rem;
-    max-width: 600px;
+    max-width: 800px;
     padding: 0;
     position: relative;
 }
@@ -34,8 +50,19 @@
 @media (min-width: 700px) {
     .Contact {
         margin: 3rem auto 0;
-        padding: 8rem 3rem 3rem;
+        padding: 6rem 3rem 3rem;
         width: 70%;
+    }
+
+    .Contact h1 {
+        font-size: 3rem;
+        font-weight: bold;
+        margin-bottom: 2rem;
+        padding: 2rem 1rem;
+    }
+
+    .Contact p {
+        font-size: 1.25rem;
     }
     
     .Contact ul {
