@@ -25,7 +25,7 @@ const Services = () => {
                 <p className={classes.Explanation}>
                     With <strong>C Thru Inspections</strong>, expect that your home will be serviced by a fully certified, professional inspector using the most up-to-date equipment and software to evaluate the most important components of your home. Our inspectors will look over vital elements, such as the structural foundation, safety hazards, and parts of your home that may require maintenance to avoid future damage.
                     <br/><br/>
-                    <strong>C Thru Inspections</strong> also provides full, easy to understand reports that will be available to you within 24 hours of your inspection. Still have questions about your inspection? Feel free to <NavLink onClick={scrollTop} to="/contactus">contact us!</NavLink> We will be more than happy to assist in any way we can. Our inspectors will also practice safe, social distancing and wear Personal Protective Equipment (PPE) for your comfort. We look forward to working with you!
+                    <strong>C Thru Inspections</strong> also provides full, easy to understand reports that will be available to you within 24 hours of your inspection. Still have questions about your inspection? Feel free to <span className={classes.Link}><NavLink onClick={scrollTop} to="/contactus">contact us!</NavLink></span> We will be more than happy to assist in any way we can. Our inspectors will also practice safe, social distancing and wear Personal Protective Equipment (PPE) for your comfort. We look forward to working with you!
                 </p>
             </div>
             <Bundle />

@@ -22,11 +22,11 @@
     padding: 5rem 1rem;
 }
 
-a {
+.Link a {
     color: #f4b41a;
 }
 
-a:hover {
+.Link a:hover {
     color: #ffcc55;
     text-decoration: none;
 }
