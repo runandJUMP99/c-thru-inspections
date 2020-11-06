@@ -1,3 +1,19 @@
+.ExplanationHeader {
+    color: #616161;
+    font-size: 1.75rem;
+    margin: 1.5rem auto;
+    text-align: center;
+}
+
+.Explanation {
+    border-top: 1px solid #616161;
+    color: #616161;
+    margin-top: 1rem;
+    max-width: 700px;
+    padding: 1rem;
+    text-align: center;
+}
+
 .ServiceGroup {
     background: url("https://firebasestorage.googleapis.com/v0/b/c-thru-inspections.appspot.com/o/concrete_seamless.png?alt=media&token=595d974d-62eb-49b2-a113-1413cb1a5826");
     display: flex;
@@ -6,13 +22,37 @@
     padding: 5rem 1rem;
 }
 
+a {
+    color: #f4b41a;
+}
+
+a:hover {
+    color: #ffcc55;
+    text-decoration: none;
+}
+
+@media (min-widtH: 700px) {
+    .ExplanationHeader {
+        font-size: 2.5rem;
+    }
+}
+
 @media (min-width: 900px) {
+    .Explanation {
+        font-size: 1.25rem;
+        width: 70%;
+    }
+
     .ServiceGroup {
         justify-content: space-around;
     }
 }
 
 @media (min-width: 1000px) {
+    .ExplanationHeader {
+        font-size: 3rem;
+    }
+
     .ServiceGroup {
         padding: 5rem 3rem;
     }

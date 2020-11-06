@@ -2,6 +2,7 @@
     background: linear-gradient(to top,rgba(0, 0, 0, 0.4) 35%, transparent), 
     url("https://firebasestorage.googleapis.com/v0/b/c-thru-inspections.appspot.com/o/condominium-690086_1920.jpg?alt=media&token=29ff3c4d-0310-44e5-ba48-192ef0e25cb8") 40%/cover no-repeat border-box;
     background-attachment: fixed;
+    box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.5);
     margin: auto;
     padding: 5rem 1rem;
     text-align: center;
