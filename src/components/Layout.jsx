@@ -4,6 +4,7 @@ import Backdrop from "./UI/Backdrop/Backdrop";
 import Footer from "./Footer/Footer";
 import Header from "./Header/Header";
 import SideDrawer from "./UI/SideDrawer/SideDrawer";
+import SideMessage from "./UI/SideMessage/SideMessage";
 
 import classes from "./Layout.module.css";
 
@@ -19,6 +20,7 @@ const Layout = (props) => {
             <Backdrop show={show} onClick={handleClick} />
             <SideDrawer show={show} onClick={handleClick} />
             <Header onClick={handleClick} />
+            <SideMessage />
             <main>
                 {props.children}
             </main>

@@ -1,0 +1,54 @@
+.SideMessage {
+    align-items: center;
+    color: #143d59;
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    left: -19.35rem;
+    position: fixed;
+    top: 40%;
+    transition: all 0.5s ease-out;
+    z-index: 5;
+}
+
+.SideMessage:hover,
+.SideMessage:active {
+    left: -7.25rem;
+}
+
+.Message {
+    background: #f4b41a;
+    border: 2px solid #143d59;
+    border-radius: 0 8px 8px 0;
+    box-shadow: 1px 0 4px 1px rgba(0, 0, 0, 0.5);
+    left: 7.25rem;
+    padding: 0.5rem 0.25rem;
+    position: relative;
+    text-align: center;
+    width: 12rem;
+}
+
+.MessageTab {
+    background: #f4b41a;
+    border: 2px solid #143d59;
+    border-radius: 8px 8px 0 0;
+    box-shadow: 1px 0 4px 1px rgba(0, 0, 0, 0.5);
+    left: 3.65rem;
+    margin: 0;
+    padding: 0.25rem 0.5rem;
+    position: relative;
+    transform: rotate(90deg);
+}
+
+.Discount {
+    display: block;
+    font-size: 1.25rem;
+}
+
+.Disclaimer {
+    font-size: 0.75rem;
+    font-style: italic;
+    font-weight: normal;
+    margin: 0;
+    margin-top: 1rem;
+}

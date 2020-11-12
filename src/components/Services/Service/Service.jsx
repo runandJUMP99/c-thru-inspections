@@ -14,7 +14,7 @@ const Service = (props) => {
                 <p>{props.description}</p>
                 <h3><p className={classes.StartingAt}>{props.startingAt}</p>${props.price}</h3>
                 <CTAButton link="#contactus">Book Your Inspection</CTAButton>
-                <p className={classes.Disclaimer}>*prices may vary depending on travel distance and square footage of home</p>
+                <p className={classes.Disclaimer}>*Prices may vary depending on travel distance and square footage of home</p>
             </div>
         </Fade>
     );
