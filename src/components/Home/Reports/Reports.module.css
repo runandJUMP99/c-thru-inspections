@@ -9,6 +9,26 @@
     width: 90%;
 }
 
+.Reports a {
+    background: #143d59;
+    border: none;
+    border-radius: 8px;
+    color: #ecf4f3;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    margin-top: 2rem;
+    padding: 1rem;
+    text-decoration: none;
+    transition: all 0.1s ease-out;
+}
+
+.Reports a:hover {
+    background: #255d83;
+    color: #ecf4f3;
+}
+
 .ContentContainer {
     align-items: center;
     display: flex;
@@ -31,6 +51,7 @@
 
 .Text p {
     font-size: 1.2rem;
+    margin: 0;
 }
 
 @media (min-width: 700px) {  

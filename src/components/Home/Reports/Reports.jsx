@@ -13,7 +13,7 @@ const Reports = () => {
                     <div className={classes.Text}>
                         <h2>Detailed Home Inspection Reports</h2>
                         <p><strong>C Thru Inspections</strong> provides detailed reports for all of our inspections. We utilize the most up to date applications that allow us to navigate through the house and break down some of the most important components of your home. This provides us the ability to deliver you a detailed inspection report within 24-48 hours, and sometimes even within the same day!  </p>
-                        {/* <CTAButton>See Example Report</CTAButton> */}
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.spectora.com/home-inspectors/c-thru-inspections-llc/sample_report?sample_id=5613">View Sample Report</a>
                     </div>
                     <img src="https://firebasestorage.googleapis.com/v0/b/c-thru-inspections.appspot.com/o/markus-spiske-SRNKol31s64-unsplash.jpg?alt=media&token=10c9dcc9-6067-47ca-9cc9-28bff305a455" alt="Reports"/>
                 </div>
