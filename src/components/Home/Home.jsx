@@ -4,6 +4,7 @@ import About from "./About/About";
 import CTASection from "../CTASection/CTASection";
 import Jumbotron from "./Jumbotron/Jumbotron";
 import Reports from "./Reports/Reports";
+import Reviews from "./Reviews/Reviews";
 import Services from "./Services/Services";
 
 import classes from "./Home.module.css";
@@ -15,6 +16,7 @@ const Home = () => {
             <About />
             <Services />
             <Reports />
+            <Reviews />
             <CTASection />
         </div>
     );

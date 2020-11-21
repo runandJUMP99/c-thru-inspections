@@ -1,0 +1,39 @@
+.Reviews {
+    border-bottom: 1px solid #ecf4f3;
+    color: #ecf4f3;
+    margin: auto;
+    max-width: 800px;
+    padding: 5rem 1rem 2rem;
+    text-align: center;
+    width: 90%;
+}
+
+.Reviews h4 {
+    font-size: 1.25rem;
+    font-weight: normal;
+}
+
+.Reviews a {
+    background: #143d59;
+    border-radius: 8px;
+    color: #ecf4f3;
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    margin-top: 1rem;
+    padding: 1rem;
+    text-decoration: none;
+    transition: all 0.1s ease-out;
+}
+
+.Reviews a:hover {
+    background: #255d83;
+    color: #ecf4f3;
+}
+
+@media (min-width: 700px) {  
+    .Reviews {
+        padding: 5rem 3rem 2rem;
+        width: 60%;
+    }
+}
