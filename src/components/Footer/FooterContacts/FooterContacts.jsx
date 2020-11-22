@@ -14,7 +14,7 @@ const FooterContacts = () => {
                 </div>
                 <div>
                     <p><i className="fas fa-map-marker-alt"></i>Proudly Serving the Central Florida Area</p>
-                    <p><i className="fas fa-clock"></i>Monday - Saturday: 8:00am - 5:00pm</p>
+                    <p><i className="fas fa-clock"></i>Monday - Saturday: 8:00 am - 9:00 pm</p>
                     <div className={classes.SocialLinks}>
                         <p><a className={classes.SocialLink} target="_blank" rel="noopener noreferrer" href="https://yelp.com/biz/c-thru-inspections-kissimmee"><i className="fab fa-yelp"></i></a></p>
                         <p><a className={classes.SocialLink} target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/C-Thru-Inspections-LLC-103441381576988"><i className="fab fa-facebook"></i></a></p>
