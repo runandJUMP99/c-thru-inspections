@@ -22,7 +22,7 @@
     width: 100%;
 }
 
-@media (min-width: 730px) {
+@media (min-width: 860px) {
     .ToggleButtonContainer {
         display: none;
     }

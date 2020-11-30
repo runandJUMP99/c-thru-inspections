@@ -30,7 +30,7 @@
     display: none;
 }
 
-@media (min-width: 730px) {
+@media (min-width: 860px) {
     .Header nav {
         display: flex;
     }

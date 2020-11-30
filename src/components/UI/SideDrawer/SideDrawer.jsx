@@ -15,14 +15,13 @@ const SideDrawer = (props) => {
         props.onClick();
     }
 
-
     return (
         <div className={classes.SideDrawer} style={{
-            transform: props.show ? "translateX(0)" : "translateX(-110%)",
+            transform: props.show ? "translateX(0)" : "translateX(-100%)",
         }}>
             <Logo />
             <nav>
-                <Links onClick={handleClick} />
+                <Links onClick={handleClick} language={props.language} sideDrawer={true} />
             </nav>
         </div>
     )

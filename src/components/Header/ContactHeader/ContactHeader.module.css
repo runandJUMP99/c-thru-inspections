@@ -5,6 +5,7 @@
     font-size: 0.85rem;
     justify-content: center;
     margin: auto;
+    padding-top: 2rem;
 }
 
 .ContactHeader a {
@@ -34,5 +35,6 @@
     .ContactHeader {
         font-size: 1.05rem;
         justify-content: flex-end;
+        padding-top: 0;
     }
 }

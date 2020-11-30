@@ -7,22 +7,10 @@ import Layout from "./components/Layout";
 import Services from "./components/Services/Services";
 import Spinner from "./components/UI/Spinner/Spinner";
 
-function App(props) {
-  const [language, setLanguage] = useState(false);
+import "./App.css";
 
-  const style = {
-    background: "#ecf4f3",
-    border: "none",
-    borderRadius: "8px",
-    color: "#143d59",
-    fontWeight: "bold",
-    left: 0,
-    margin: "0 0.5rem",
-    padding: "0.5rem",
-    position: "fixed",
-    top: 0,
-    zIndex: 25,
-}
+function App() {
+  const [language, setLanguage] = useState(false);
 
   function languageHandler() {
     setLanguage(prevValue => !prevValue);
@@ -31,7 +19,11 @@ function App(props) {
   return (
     <div className="App">
       <Layout language={language}>
-        <button onClick={languageHandler} style={style}>Para Español, Hace Clic</button>
+        <button className="LanguageButton" onClick={languageHandler}>
+          {language ?
+          "For English, Click Here" :
+          "Para Español, Hace Clic"}
+        </button>
         <Suspense fallback={<Spinner />}>
           <Switch>
             <Route path="/" exact render={() => <Home language={language} />} />
