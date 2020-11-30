@@ -8,12 +8,12 @@ import Spinner from "../../UI/Spinner/Spinner";
 
 import classes from "./ContactUs.module.css";
 
-const ContactUs = () => {
+const ContactUs = (props) => {
     const [messageForm, setMessageForm] = useState({
         name: {
             elementType: "input",
             elementConfig:{
-                placeholder: "Your Name",
+                placeholder: props.language ? "Tu Nombre" : "Your Name",
                 type: "text"
             },
             value: "",
@@ -26,7 +26,7 @@ const ContactUs = () => {
         email: {
             elementType: "input",
             elementConfig:{
-                placeholder: "Email",
+                placeholder: props.language ? "Correo Electrónico" : "Email",
                 type: "email"
             },
             value: "",
@@ -39,7 +39,7 @@ const ContactUs = () => {
         phone: {
             elementType: "input",
             elementConfig:{
-                placeholder: "Phone Number",
+                placeholder: props.language ? "Número de Teléfono" : "Phone Number",
                 type: "text"
             },
             value: "",
@@ -52,7 +52,7 @@ const ContactUs = () => {
         message: {
             elementType: 'textarea',
             elementConfig: {
-                placeholder: 'Description',
+                placeholder: props.language ? "Descripción" : "Description",
                 rows: 4
             },
             value: "",
@@ -64,7 +64,7 @@ const ContactUs = () => {
         },
     });
 
-    const [message, setMessage] = useState("Enter your Contact Information");
+    const [message, setMessage] = useState(props.language ? "Ingrese Su Información de Contacto" : "Enter Your Contact Information");
     const [formIsValid, setFormIsValid] = useState(false);
     const [captcha, setCaptcha] = useState(false);
     const [isLoading, setIsLoading] = useState(false);
@@ -91,7 +91,7 @@ const ContactUs = () => {
                 }
 
                 setMessageForm(updatedMessageForm);
-                setMessage("Your message has been delivered. Thank you!");
+                setMessage(props.language ? "Su mensaje ha sido entregado. ¡Gracias!" : "Your message has been delivered. Thank you!");
                 setMessageSent(true);
                 setIsLoading(false);
             }, err => {
@@ -106,7 +106,7 @@ const ContactUs = () => {
                 }
 
                 setMessageForm(updatedMessageForm);
-                setMessage("Uh oh! There was an error delivering your message. Please try again.");
+                setMessage(props.language ? "Hubo un error al entregar su mensaje. Inténtalo de nuevo." : "Uh oh! There was an error delivering your message. Please try again.");
                 setIsLoading(false);
                 setFormIsValid(false);
                 setCaptcha(false);
@@ -188,7 +188,7 @@ const ContactUs = () => {
                 <div className={classes.Captcha}>
                     <ReCAPTCHA sitekey={process.env.REACT_APP_SITE_KEY} onChange={handleCaptcha} />
                 </div>
-                <CTAButton disabled={!formIsValid}>Submit</CTAButton>
+                <CTAButton disabled={!formIsValid}>{props.language ? "Enviar" : "Submit"}</CTAButton>
             </form>
         );
     }

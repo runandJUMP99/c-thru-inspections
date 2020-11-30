@@ -25,7 +25,7 @@ const Header = (props) => {
                     <LongLogo />
                 </div>
                 <nav>
-                    <Links onClick={scrollTop} />
+                    <Links language={props.language} onClick={scrollTop} />
                 </nav>
                 <ToggleButton onClick={props.onClick}/>
             </div>

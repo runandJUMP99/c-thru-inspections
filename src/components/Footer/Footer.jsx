@@ -7,15 +7,15 @@ import FooterLinks from "./FooterLinks/FooterLinks";
 
 import classes from "./Footer.module.css";
 
-const Footer = () => {
+const Footer = (props) => {
     return (
         <div className={classes.Footer}>
-            <FooterHeader />
+            <FooterHeader language={props.language}/>
             <div className={classes.FooterContent}>
-                <FooterLinks />
-                <FooterContacts />
+                <FooterLinks language={props.language}/>
+                <FooterContacts language={props.language}/>
             </div>
-            <FooterBottom />
+            <FooterBottom language={props.language}/>
         </div>
     );
 }

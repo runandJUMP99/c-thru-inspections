@@ -17,14 +17,14 @@ const Layout = (props) => {
 
     return (
         <div className={classes.Layout}>
-            <Backdrop show={show} onClick={handleClick} />
-            <SideDrawer show={show} onClick={handleClick} />
-            <Header onClick={handleClick} />
-            <SideMessage />
+            <Backdrop show={show} language={props.language} onClick={handleClick} />
+            <SideDrawer show={show} language={props.language} onClick={handleClick} />
+            <Header language={props.language} onClick={handleClick} />
+            <SideMessage language={props.language} />
             <main>
                 {props.children}
             </main>
-            <Footer />
+            <Footer language={props.language} />
         </div>
     );
 }

@@ -12,11 +12,11 @@ const FooterLinks = (props) => {
 
     return (
         <ul className={classes.FooterLinks}>
-            <FooterLink name="Home" link="/" onClick={scrollTop}/>
-            <FooterLink name="About" link="#aboutus" />
-            <FooterLink name="Services" link="/services" onClick={scrollTop}/>
+            <FooterLink name={props.language ? "Inicio" : "Home"} link="/" onClick={scrollTop}/>
+            <FooterLink name={props.language ? "Servicios" : "Services"} link="/services" onClick={scrollTop}/>
+            <FooterLink name={props.language ? "Sobre Nosotros" : "About"} link="#aboutus" />
             {/* <FooterLink name="Terms" link="" onClick={scrollTop}/> */}
-            <FooterLink name="Contact Us" link="/contactus" onClick={scrollTop}/>
+            <FooterLink name={props.language ? "Contáctenos" : "Contact Us"} link="/contactus" onClick={scrollTop}/>
         </ul>
     );
 }

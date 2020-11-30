@@ -4,13 +4,13 @@ import Logo from "../../UI/Logo/Logo";
 
 import classes from "./FooterHeader.module.css";
 
-const FooterHeader = () => {
+const FooterHeader = (props) => {
     return (
         <div className={classes.FooterHeader}>
             <div className={classes.Logo}>
                 <Logo type="dark" />
             </div>
-            <p>Trusted - Reliable - Secure</p>
+            <p>{props.language ? "Confiable - Profesional - Seguro" : "Trusted - Reliable - Secure"}</p>
         </div>
     );
 }

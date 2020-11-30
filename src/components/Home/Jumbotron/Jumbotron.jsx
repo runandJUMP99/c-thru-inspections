@@ -4,7 +4,7 @@ import CTAButton from "../../UI/CTAButton/CTAButton";
 
 import classes from "./Jumbotron.module.css";
 
-const Jumbotron = () => {
+const Jumbotron = (props) => {
     return (
         <div id="home" className={classes.Jumbotron}>
             <div className={classes.Carousel}>
@@ -19,36 +19,69 @@ const Jumbotron = () => {
                         <div className="carousel-item active">
                             <div className={classes.Image1}>
                                 <div className={classes.Text}>
-                                    <h1>YOUR CENTRAL FLORIDA HOME INSPECTOR</h1>
-                                    <p>Make the smart choice by having your home inspected annually.</p>
-                                    <CTAButton link="#contactus">Schedule Your Inspection</CTAButton>
+                                    <h1>
+                                        {props.language ?
+                                        "SU INSPECTOR DE CASA CENTRAL DE FLORIDA" :
+                                        "YOUR CENTRAL FLORIDA HOME INSPECTOR"
+                                        }
+                                    </h1>
+                                    <p>
+                                        {props.language ? 
+                                        "Tome la decisión inteligente haciendo que su casa sea inspeccionada anualmente." :
+                                        "Make the smart choice by having your home inspected annually."}
+                                    </p>
+                                    <CTAButton link="#contactus">{props.language ? "Programar Su Inspección" : "Schedule Your Inspection"}</CTAButton>
                                 </div>
                             </div>
                         </div>
                         <div className="carousel-item">
                             <div className={classes.Image2}>
                                 <div className={classes.Text}>
-                                    <h1>New Home Inspection</h1>
-                                    <p>Looking to buy a home? Allow us make sure it's up to your standards.</p>
-                                    <CTAButton link="#contactus">Schedule Your Inspection</CTAButton>
+                                    <h1>
+                                        {props.language ?
+                                        "Inspección de Viviendas Nuevas" :
+                                        "New Home Inspection"}
+                                    </h1>
+                                    <p>
+                                        {props.language ? 
+                                        "¿Está buscando comprar una casa? Permítanos asegurarnos de que esté a la altura de sus estándares." : 
+                                        "Looking to buy a home? Allow us make sure it's up to your standards."}
+                                    </p>
+                                    <CTAButton link="#contactus">{props.language ? "Programar Su Inspección" : "Schedule Your Inspection"}</CTAButton>
                                 </div>
                             </div>
                         </div>
                         <div className="carousel-item">
                             <div className={classes.Image3}>
                                 <div className={classes.Text}>
-                                    <h1>Wind Mitigation Inspection</h1>
-                                    <p>Learn how this inspection could help you save money!</p>
-                                    <CTAButton link="#contactus">Schedule Your Inspection</CTAButton>
+                                    <h1>
+                                        {props.language ? 
+                                        "Inspección de Mitigación de Viento" :
+                                        "Wind Mitigation Inspection"}
+                                    </h1>
+                                    <p>
+                                        {props.language ? 
+                                        "Descubra cómo esta inspección puede ayudarlo a ahorrar dinero!" :
+                                        "Learn how this inspection could help you save money!"}
+                                    </p>
+                                    <CTAButton link="#contactus">{props.language ? "Programar Su Inspección" : "Schedule Your Inspection"}</CTAButton>
                                 </div>
                             </div>
                         </div>
                         <div className="carousel-item">
                             <div className={classes.Image4}>
                                 <div className={classes.Text}>
-                                    <h1>Superior Service</h1>
-                                    <p>Quality inspections. Affordable Prices.</p>
-                                    <CTAButton link="#contactus">Schedule Your Inspection</CTAButton>
+                                    <h1>
+                                        {props.language ? 
+                                        "Servicio Superior" : 
+                                        "Superior Service"}
+                                    </h1>
+                                    <p>
+                                        {props.language ?
+                                        "Inspecciones de calidad. Precios asequibles." : 
+                                        "Quality inspections. Affordable prices."}
+                                    </p>
+                                    <CTAButton link="#contactus">{props.language ? "Programar Su Inspección" : "Schedule Your Inspection"}</CTAButton>
                                 </div>
                             </div>
                         </div>

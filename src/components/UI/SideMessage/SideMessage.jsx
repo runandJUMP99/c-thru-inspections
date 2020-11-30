@@ -4,7 +4,7 @@ import CTAButton from "../CTAButton/CTAButton";
 
 import classes from "./SideMessage.module.css";
 
-const SideMessage = () => {
+const SideMessage = (props) => {
     const [show, setShow] = useState(false);
     const [style, setStyle] = useState(null);
 
@@ -30,11 +30,19 @@ const SideMessage = () => {
         <div onMouseOver={handleMouseOver} onMouseLeave={handleMouseExit} className={classes.SideMessage} style={{left: style}}>
             <div onClick={handleHide} className={classes.HiddenBackdrop} style={{display: show ? "block" : "none"}}></div>
             <div className={classes.Message}>
-                <p>Save 10% by using <span className={classes.Discount}>"MILITARY10"</span> when booking your inspection!</p>
-                <CTAButton onClick={handleHide} link="#contactus">Book Now</CTAButton>
-                <p className={classes.Disclaimer}>*Must show proof before inspection date</p>
+                <p>
+                    {props.language ?
+                    "Ahorre 10% usando" :
+                    "Save 10% by using"} 
+                    <span className={classes.Discount}>"MILITARY10"</span> 
+                    {props.language ?
+                    "al reservar su inspección!" :
+                    "when booking your inspection!"}
+                </p>
+                <CTAButton onClick={handleHide} link="#contactus">{props.language ? "Reservar Ahora" : "Book Now"}</CTAButton>
+                <p className={classes.Disclaimer}>{props.language ? "*Debe mostrar prueba antes de la fecha de inspección" : "*Must show proof before inspection date"}</p>
             </div>
-            <p onClick={handleShow} className={classes.MessageTab}>Military Discount</p>
+            <p onClick={handleShow} className={classes.MessageTab} style={{left: props.language && "3.55rem"}}>{props.language ? "Descuento Militar" : "Military Discount"}</p>
         </div>
     );
 }

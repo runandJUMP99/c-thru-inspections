@@ -5,14 +5,50 @@ import Service from "./Service/Service";
 
 import classes from "./Services.module.css";
 
-const Services = () => {
+const Services = (props) => {
     return (
         <div id="services" className={classes.Services}>
-            <h1>What We Offer</h1>
+            <h1>
+                {props.language ?
+                "Lo Que Ofrecemos" :
+                "What We Offer"}
+            </h1>
             <div className={classes.ServicesGroup}>
-                <Service icon={"fas fa-house-damage"} service="Home Inspection" description="For new or existing home owners, inspections provide our clients knowledge and information on the current state of one of their largest investments." />
-                <Service icon={"fas fa-wind"} service="Wind Mitigation Inspection" description="Hurricanes are common in Florida. This inspection assists in determining how vulnerable your home is to high velocity winds." />
-                <Service icon={"fas fa-bullseye"} service="4-Point Inspection" description="Rest easy knowing that the four major components of your home: roofing, plumbing, electrical, and HVAC systems, are secure." />
+                <Service 
+                    icon={"fas fa-house-damage"} 
+                    service={
+                        props.language ?
+                        "Inspección de viviendas" :
+                        "Home Inspection"
+                    } 
+                    description={
+                        props.language ?
+                        "Para los propietarios de viviendas nuevas o existentes, las inspecciones brindan a nuestros clientes conocimiento e información sobre el estado actual de una de sus mayores inversiones." :
+                        "For new or existing home owners, inspections provide our clients knowledge and information on the current state of one of their largest investments."
+                    }
+                />
+                <Service 
+                    icon={"fas fa-wind"} 
+                    service={
+                        props.language ?
+                        "Inspección de Mitigación de Viento" :
+                        "Wind Mitigation Inspection"}
+                    description={
+                        props.language ?
+                        "Los huracanes son comunes en Florida. Esta inspección ayuda a determinar qué tan vulnerable es su casa a los vientos de alta velocidad." :
+                        "Hurricanes are common in Florida. This inspection assists in determining how vulnerable your home is to high velocity winds."}
+                />
+                <Service 
+                    icon={"fas fa-bullseye"} 
+                    service={
+                        props.language ?
+                        "Inspección de 4 Puntos" :
+                        "4-Point Inspection"} 
+                    description={
+                        props.language ?
+                        "Descanse tranquilo sabiendo que los cuatro componentes principales de su hogar: techos, plomería, sistemas eléctricos y HVAC son seguros." :
+                        "Rest easy knowing that the four major components of your home: roofing, plumbing, electrical, and HVAC systems, are secure."} 
+                />
             </div>
             <Fade bottom>
                 <div className={classes.Logos}>
