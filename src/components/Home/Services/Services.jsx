@@ -18,7 +18,7 @@ const Services = (props) => {
                     icon={"fas fa-house-damage"} 
                     service={
                         props.language ?
-                        "Inspección de viviendas" :
+                        "Inspección de Viviendas" :
                         "Home Inspection"
                     } 
                     description={
@@ -35,7 +35,7 @@ const Services = (props) => {
                         "Wind Mitigation Inspection"}
                     description={
                         props.language ?
-                        "Los huracanes son comunes en Florida. Esta inspección ayuda a determinar qué tan vulnerable es su casa a los vientos de alta velocidad." :
+                        "Los huracanes son comunes en Florida. Esta inspección ayuda a determinar qué tan vulnerable es su casa a los vientos de velocidad alta." :
                         "Hurricanes are common in Florida. This inspection assists in determining how vulnerable your home is to high velocity winds."}
                 />
                 <Service 

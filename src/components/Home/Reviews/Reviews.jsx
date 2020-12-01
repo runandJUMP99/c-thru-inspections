@@ -10,7 +10,7 @@ const Reviews = (props) => {
             <Fade>
                 <h1>
                     {props.language ? 
-                    "¿Por qué elegirnos para la próxima inspección de su casa?" :
+                    "¿Por Qué Elegirnos Para La Próxima Inspección de Su Casa?" :
                     "Why Choose Us For Your Next Home Inspection?"}
                 </h1>
                 <h4>

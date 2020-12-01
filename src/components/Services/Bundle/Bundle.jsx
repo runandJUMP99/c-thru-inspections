@@ -13,7 +13,7 @@ const Bundle = (props) => {
                     <h1>{props.language ? "Combo de Inspección de Seguros" : "Insurance Inspection Combo"}</h1>
                     <p className={classes.Description}>
                         {props.language ?
-                        "Combine una inspección de mitigación del viento y una inspección de 4 puntos por solo" :
+                        "Combine una Inspección de Mitigación del Viento y una Inspección de 4 Puntos por solo" :
                         "Combine a Wind Mitigation Inspection and 4-Point Inspection for only"}
                     </p>
                     <h1>$150</h1>

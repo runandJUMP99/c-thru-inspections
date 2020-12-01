@@ -27,7 +27,7 @@ const About = (props) => {
                             ", the only home inspector school accredited by the "}
                             <a className={classes.Link} target="_blank" rel="noopener noreferrer" href="https://accet.org/">Accrediting Council for Continuing Education & Training</a> (ACCET). 
                             {props.language ?
-                            " Florida tiene algunos de los climas más duros y las casas son propensas a fuertes vientos causados ​​por huracanes y tornados. Debido a esto, es mejor revisar su casa anualmente. " :
+                            " Florida tiene algunos de los climas más duros y las casas son propensas a vientos fuertes causados ​​por huracanes y tornados. Debido a esto, es mejor revisar su casa anualmente. " :
                             " Florida has some of the toughest climates, and homes are prone to high wind conditions from hurricanes and tornadoes. Because of this, it is best to get your home checked annually. "}
                             <strong>C Thru Inspections</strong> 
                             {props.language ?

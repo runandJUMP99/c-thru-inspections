@@ -17,7 +17,7 @@ const Intro = (props) => {
                     "Home Inspectors provide their customers assurance with the safety and functions of their home. Our inspectors follow the "}
                     <a className={classes.Link} target="_blank" rel="noopener noreferrer" href="https://s3.amazonaws.com/uploads-east-1.nachi.org/page-uploads%2F2020%2F03%2F1584478818326-Home+Inspection+Standards+of+Practice.pdf">InterNACHI {props.language ? "Normas de Práctica" : "Standards of Practice"}</a>
                     {props.language ?
-                    ", que es la asociación líder mundial de inspectores de viviendas. Nuestros inspectores profesionales certificados (CPI) se esfuerzan por mantenerse al día con las nuevas tecnologías emergentes para lograr un trabajo de calidad en cada hogar. Ya sea que esté buscando hacer una inspección de 4 puntos, mitigación de viento o una casa: ¡Lo tenemos cubierto!" :
+                    ", que es la asociación líder mundial de inspectores de viviendas. Nuestros inspectores profesionales certificados se esfuerzan por mantenerse al día con las nuevas tecnologías emergentes para lograr un trabajo de calidad en cada hogar. Ya sea que esté buscando hacer una inspección de 4 puntos, mitigación de viento o una casa: ¡Lo tenemos cubierto!" :
                     ", which is the world's leading association for home inspectors. Our Certified Professional Inspectors (CPI) strive to keep up with new, emerging technologies to accomplish quality work on every home. Whether you are looking to do a 4-Point, Wind Mitigation, or a Home Inspection, we've got you covered!"}
                 </p>
                 <CTAButton link="#contactus">{props.language ? "Programe Su Inspección" : "Schedule Your Inspection"}</CTAButton>
