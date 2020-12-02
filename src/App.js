@@ -21,8 +21,8 @@ function App() {
       <Layout language={language}>
         <button className="LanguageButton" onClick={languageHandler}>
           {language ?
-          "For English, Click Here" :
-          "Para Español, Hace Clic"}
+          "English" :
+          "Español"}
         </button>
         <Suspense fallback={<Spinner />}>
           <Switch>
