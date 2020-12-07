@@ -23,7 +23,7 @@ const Reports = (props) => {
                         </p>
                         <a target="_blank" rel="noopener noreferrer" href="https://www.spectora.com/home-inspectors/c-thru-inspections-llc/sample_report?sample_id=5613">{props.language ? "Ver Informe de Muestra" : "View Sample Report"}</a>
                     </div>
-                    <img src="https://firebasestorage.googleapis.com/v0/b/c-thru-inspections.appspot.com/o/markus-spiske-SRNKol31s64-unsplash.jpg?alt=media&token=10c9dcc9-6067-47ca-9cc9-28bff305a455" alt="Reports"/>
+                    <img src="https://firebasestorage.googleapis.com/v0/b/c-thru-inspections.appspot.com/o/ReportsImg%402x.png?alt=media&token=854c7420-464f-424c-b146-20019ad5e1c4" alt="Reports"/>
                 </div>
             </Fade>
         </div>
