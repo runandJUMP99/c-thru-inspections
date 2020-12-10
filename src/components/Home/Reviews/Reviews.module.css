@@ -2,7 +2,7 @@
     border-bottom: 1px solid #ecf4f3;
     color: #ecf4f3;
     margin: auto;
-    max-width: 800px;
+    /* max-width: 800px; */
     padding: 5rem 1rem 2rem;
     text-align: center;
     width: 90%;
@@ -31,9 +31,16 @@
     color: #ecf4f3;
 }
 
+.ReviewsGroup {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem;
+    max-width: 85rem;
+}
+
 @media (min-width: 700px) {  
     .Reviews {
         padding: 5rem 3rem 2rem;
-        width: 60%;
     }
 }

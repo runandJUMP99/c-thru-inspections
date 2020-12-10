@@ -1,0 +1,38 @@
+.Review {
+    background: white;
+    box-shadow: 0 1px 4px 2px rgba(0, 0, 0, 0.5);
+    color: #366483;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 1rem auto;
+    padding: 1.5rem;
+    text-align: left;
+    width: 25rem;
+}
+
+.Review p {
+    color: #143d59;
+    margin: 0;
+}
+
+.Stars i {
+    color: #f4b41a;
+    font-size: 1.25rem;
+    margin: 1rem 0.2rem
+}
+
+.Comment {
+    font-size: 1.1rem;
+}
+
+.Comment i {
+    bottom: 0.25rem;
+    color: rgba(102, 102, 102, 0.6);
+    margin-right: 0.5rem;
+    position: relative;
+}
+
+.Name {
+    font-size: 0.8rem;
+}

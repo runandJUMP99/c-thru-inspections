@@ -1,6 +1,6 @@
 .Jumbotron {
     font-family: 'Poppins', sans-serif;
-    height: 100vh;
+    height: 90vh;
     position: relative;
     width: 100%;
 }
@@ -11,7 +11,7 @@
 .Image4 {
     background: linear-gradient(to top,rgba(0, 0, 0, 0.5) 55%, transparent), 
     url("https://firebasestorage.googleapis.com/v0/b/c-thru-inspections.appspot.com/o/pexels-pixabay-259588.jpg?alt=media&token=c96c34e4-8647-4511-a2e6-2036c5896476") 40%/cover no-repeat border-box;
-    height: 100vh;
+    height: 90vh;
     width: 100%
 }
 
