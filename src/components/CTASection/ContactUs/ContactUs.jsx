@@ -186,7 +186,7 @@ const ContactUs = (props) => {
                         value={formElement.config.value}/>
                 ))}
                 <div className={classes.Captcha}>
-                    <ReCAPTCHA sitekey={process.env.REACT_APP_SITE_KEY} onChange={handleCaptcha} />
+                    <ReCAPTCHA sitekey={process.env.REACT_APP_RECAPTCHA_SITE_KEY} onChange={handleCaptcha} />
                 </div>
                 <CTAButton disabled={!formIsValid}>{props.language ? "Enviar" : "Submit"}</CTAButton>
             </form>

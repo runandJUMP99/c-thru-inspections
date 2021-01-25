@@ -8,7 +8,7 @@
 .Explanation {
     border-top: 1px solid #616161;
     color: #616161;
-    margin-top: 1rem;
+    margin: 1rem auto;
     max-width: 700px;
     padding: 1rem;
     text-align: center;

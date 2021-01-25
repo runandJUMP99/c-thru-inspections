@@ -54,27 +54,29 @@ const Services = (props) => {
                     } 
                 />
                 <Fade>
-                    <h1 className={classes.ExplanationHeader}>
-                       {props.language ?
-                       "Qué Esperar De La Inspección De Su Casa" :
-                       "What To Expect From Your Home Inspection"}
-                        </h1>
-                    <p className={classes.Explanation}>
-                        {props.language ? "Con " : "With "}
-                        <strong>C Thru Inspections</strong>
+                    <div>
+                        <h1 className={classes.ExplanationHeader}>
                         {props.language ?
-                        ", espere que su hogar sea atendido por un inspector profesional totalmente certificado que utilice el equipo y el software más actualizados para evaluar los componentes más importantes de su hogar. Nuestros inspectores revisarán los elementos vitales, como los cimientos estructurales, los peligros de seguridad y las partes de su hogar que puedan requerir mantenimiento para evitar daños futuros." :
-                        ", expect that your home will be serviced by a fully certified, professional inspector using the most up-to-date equipment and software to evaluate the most important components of your home. Our inspectors will look over vital elements, such as the structural foundation, safety hazards, and parts of your home that may require maintenance to avoid future damage."}
-                        <br/><br/>
-                        <strong>C Thru Inspections</strong> 
-                        {props.language ? 
-                        " también proporciona informes completos y fáciles de entender que estarán disponibles dentro de las 24 horas posteriores a la inspección. Nuestros inspectores también practicarán el distanciamiento social seguro y usarán Equipo de Protección Personal para su comodidad. ¿Todavía tiene preguntas sobre su inspección? ¡No dude en " :
-                        " also provides full, easy to understand reports that will be available to you within 24 hours of your inspection. Our inspectors will also practice safe, social distancing and wear Personal Protective Equipment (PPE) for your comfort. Still have questions about your inspection? Feel free to "}
-                        <span className={classes.Link}><NavLink onClick={scrollTop} to="/contactus">{props.language ? "contáctenos!" : "contact us!"}</NavLink></span> 
-                        {props.language ?
-                        " Estaremos más que felices de ayudarlo en todo lo que podamos. ¡Esperamos con interés trabajar con usted!" :
-                        " We will be more than happy to assist in any way we can. We look forward to working with you!"}
-                    </p>
+                        "Qué Esperar De La Inspección De Su Casa" :
+                        "What To Expect From Your Home Inspection"}
+                            </h1>
+                        <p className={classes.Explanation}>
+                            {props.language ? "Con " : "With "}
+                            <strong>C Thru Inspections</strong>
+                            {props.language ?
+                            ", espere que su hogar sea atendido por un inspector profesional totalmente certificado que utilice el equipo y el software más actualizados para evaluar los componentes más importantes de su hogar. Nuestros inspectores revisarán los elementos vitales, como los cimientos estructurales, los peligros de seguridad y las partes de su hogar que puedan requerir mantenimiento para evitar daños futuros." :
+                            ", expect that your home will be serviced by a fully certified, professional inspector using the most up-to-date equipment and software to evaluate the most important components of your home. Our inspectors will look over vital elements, such as the structural foundation, safety hazards, and parts of your home that may require maintenance to avoid future damage."}
+                            <br/><br/>
+                            <strong>C Thru Inspections</strong> 
+                            {props.language ? 
+                            " también proporciona informes completos y fáciles de entender que estarán disponibles dentro de las 24 horas posteriores a la inspección. Nuestros inspectores también practicarán el distanciamiento social seguro y usarán Equipo de Protección Personal para su comodidad. ¿Todavía tiene preguntas sobre su inspección? ¡No dude en " :
+                            " also provides full, easy to understand reports that will be available to you within 24 hours of your inspection. Our inspectors will also practice safe, social distancing and wear Personal Protective Equipment (PPE) for your comfort. Still have questions about your inspection? Feel free to "}
+                            <span className={classes.Link}><NavLink onClick={scrollTop} to="/contactus">{props.language ? "contáctenos!" : "contact us!"}</NavLink></span> 
+                            {props.language ?
+                            " Estaremos más que felices de ayudarlo en todo lo que podamos. ¡Esperamos con interés trabajar con usted!" :
+                            " We will be more than happy to assist in any way we can. We look forward to working with you!"}
+                        </p>
+                    </div>
                 </Fade>
             </div>
             <Bundle language={props.language}/>
