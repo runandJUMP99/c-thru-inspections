@@ -3,10 +3,10 @@ import React from "react";
 import classes from "./Logo.module.css";
 
 const Logo = (props) => {
-    let img = "https://firebasestorage.googleapis.com/v0/b/c-thru-inspections.appspot.com/o/Logo.svg?alt=media&token=4fc2df9e-efa3-4628-9b73-dcbe4d0c64ff";
+    let img = "https://firebasestorage.googleapis.com/v0/b/c-thru-inspections.appspot.com/o/NewLogo.svg?alt=media&token=f386fceb-d57d-4cc5-aa7d-acf51dded3da";
     
     if (props.type === "dark") {
-        img = "https://firebasestorage.googleapis.com/v0/b/c-thru-inspections.appspot.com/o/Logo-DarkBackground.svg?alt=media&token=f59bc4fb-052b-4ad9-9215-feaed29a29d4";
+        img = "https://firebasestorage.googleapis.com/v0/b/c-thru-inspections.appspot.com/o/NewLogoDark.svg?alt=media&token=faf3ac49-a240-46d1-b72b-0a39d61c7b64";
     }
     
     return (

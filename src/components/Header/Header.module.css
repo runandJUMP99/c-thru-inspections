@@ -23,7 +23,7 @@
 .Logo img {
     margin-left: 1rem;
     max-width: 250px;
-    width: 60%;
+    width: 80%;
 }
 
 .LongLogo  {
@@ -35,7 +35,7 @@
         display: flex;
     }
 
-    .Logo {
+    /* .Logo {
         display: none;
     }
 
@@ -44,5 +44,5 @@
         margin-left: 1rem;
         max-width: 500px;
         width: 40%;
-    }
+    } */
 }
