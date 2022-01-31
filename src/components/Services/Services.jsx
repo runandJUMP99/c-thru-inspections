@@ -24,7 +24,7 @@ const Services = props => {
           title={props.language ? "Inspección de Viviendas" : "Home Inspection"}
           icon="fas fa-house-damage"
           startingAt={props.langauge ? "A Partir de:" : "Starting at: "}
-          price="275"
+          price="300"
           description={
             props.language
               ? "Una Inspección de La Vivienda es un examen no invasivo del estado de la vivienda. Nuestra Inspección de Vivienda consiste en inspeccionar los componentes más importantes de una vivienda, como los cimientos, armazón y techo, entre otros. Las inspecciones de viviendas suelen tardar entre 2 y 3 1/2 horas."
