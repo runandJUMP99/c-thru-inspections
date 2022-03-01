@@ -1,43 +1,42 @@
 .ContactHeader {
-    align-items: center;
-    background: #143d59;
-    display: flex;
-    font-size: 0.85rem;
-    justify-content: flex-end;
-    margin: auto;
+  align-items: center;
+  background: #143d59;
+  display: flex;
+  font-size: 0.85rem;
+  justify-content: flex-end;
+  margin: auto;
 }
 
 .ContactHeader a {
-    color: #ecf4f3;
-    cursor: pointer;
-    padding: 0.6rem 0.25rem;
-    text-decoration: none;
+  color: #ecf4f3;
+  cursor: pointer;
+  padding: 0.6rem 0.25rem;
+  text-decoration: none;
 }
 
 .ContactHeader a:hover {
-    color: #d4d4d4;
+  color: #d4d4d4;
 }
 
-
 .ContactHeader i {
-    margin-right: 0.5rem
+  margin-right: 0.5rem;
 }
 
 @media (max-width: 490px) {
-    .ContactHeader {
-        font-size: 0.65rem;
-    } 
+  .ContactHeader {
+    font-size: 0.65rem;
+  }
 }
 
 @media (min-width: 700px) {
-    .ContactHeader {
-        font-size: 1.05rem;
-        justify-content: flex-end;
-        padding-top: 0;
-    }
+  .ContactHeader {
+    font-size: 1.05rem;
+    justify-content: flex-end;
+    padding-top: 0;
+  }
 
-    .ContactHeader a {
-        margin: 0 0.5rem;
-        padding: 0.6rem 0.5rem;
-    }
+  .ContactHeader a {
+    margin: 0 0.5rem;
+    padding: 0.6rem 0.5rem;
+  }
 }
