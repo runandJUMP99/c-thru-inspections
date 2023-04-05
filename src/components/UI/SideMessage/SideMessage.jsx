@@ -50,7 +50,7 @@ const SideMessage = props => {
           onClick={() => {
             handleHide();
             return window.gtag_report_conversion(
-              "https://cthruinspections.com"
+              "https://cthruinspections.com#contactus"
             );
           }}
           link="#contactus"

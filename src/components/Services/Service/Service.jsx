@@ -18,7 +18,9 @@ const Service = props => {
         <CTAButton
           link="#contactus"
           onClick={() =>
-            window.gtag_report_conversion("https://cthruinspections.com")
+            window.gtag_report_conversion(
+              "https://cthruinspections.com/services#contactus"
+            )
           }
         >
           {props.language ? "Reserve Su Inspección" : "Book Your Inspection"}

@@ -42,7 +42,7 @@ const Jumbotron = props => {
                     link="#contactus"
                     onClick={() =>
                       window.gtag_report_conversion(
-                        "https://cthruinspections.com"
+                        "https://cthruinspections.com#contactus"
                       )
                     }
                   >
@@ -70,7 +70,7 @@ const Jumbotron = props => {
                     link="#contactus"
                     onClick={() =>
                       window.gtag_report_conversion(
-                        "https://cthruinspections.com"
+                        "https://cthruinspections.com#contactus"
                       )
                     }
                   >
@@ -98,7 +98,7 @@ const Jumbotron = props => {
                     link="#contactus"
                     onClick={() =>
                       window.gtag_report_conversion(
-                        "https://cthruinspections.com"
+                        "https://cthruinspections.com#contactus"
                       )
                     }
                   >
@@ -124,7 +124,7 @@ const Jumbotron = props => {
                     link="#contactus"
                     onClick={() =>
                       window.gtag_report_conversion(
-                        "https://cthruinspections.com"
+                        "https://cthruinspections.com#contactus"
                       )
                     }
                   >
