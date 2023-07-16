@@ -24,7 +24,7 @@ const Services = props => {
           title={props.language ? "Inspección de Viviendas" : "Home Inspection"}
           icon="fas fa-house-damage"
           startingAt={props.langauge ? "A Partir de:" : "Starting at: "}
-          price="350"
+          price="375"
           description={
             props.language
               ? "Una Inspección de La Vivienda es un examen no invasivo del estado de la vivienda. Nuestra Inspección de Vivienda consiste en inspeccionar los componentes más importantes de una vivienda, como los cimientos, armazón y techo, entre otros. Las inspecciones de viviendas suelen tardar entre 2 y 3 1/2 horas."
@@ -39,7 +39,7 @@ const Services = props => {
               : "Wind Mitigation Inspection"
           }
           icon="fas fa-wind"
-          price="85"
+          price="95"
           description={
             props.language
               ? "Una Inspección de Mitigación de Viento, también llamada Inspección de Mitigación de Tormenta de Viento, es cuando un inspector certificado verifica las características de resistencia al viento de su casa. Aunque no se requiere una inspección de mitigación del viento para obtener el seguro de propietarios de viviendas de Florida, puede resultar en ahorros sustanciales para su hogar."
@@ -52,7 +52,7 @@ const Services = props => {
             props.language ? "Inspección de 4 Puntos" : "4-Point Inspection"
           }
           icon="fas fa-bullseye"
-          price="95"
+          price="110"
           description={
             props.language
               ? "Una Inspección de 4 Puntos examina los cuatro sistemas principales de su hogar: techo, electricidad, plomería y HVAC. Una compañía de seguros quiere saber que su hogar ha recibido un buen mantenimiento y que los sistemas principales están en buenas condiciones y funcionan."
