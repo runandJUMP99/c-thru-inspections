@@ -20,7 +20,7 @@ const Bundle = props => {
               ? "Combine una Inspección de Mitigación del Viento y una Inspección de 4 Puntos por solo"
               : "Combine a Wind Mitigation Inspection and 4-Point Inspection for only"}
           </p>
-          <h1>$185</h1>
+          <h1>$175</h1>
           <CTAButton
             link="#contactus"
             onClick={() =>

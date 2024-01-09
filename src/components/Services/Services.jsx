@@ -24,7 +24,7 @@ const Services = props => {
           title={props.language ? "Inspección de Viviendas" : "Home Inspection"}
           icon="fas fa-house-damage"
           startingAt={props.langauge ? "A Partir de:" : "Starting at: "}
-          price="375"
+          price="350"
           description={
             props.language
               ? "Una Inspección de La Vivienda es un examen no invasivo del estado de la vivienda. Nuestra Inspección de Vivienda consiste en inspeccionar los componentes más importantes de una vivienda, como los cimientos, armazón y techo, entre otros. Las inspecciones de viviendas suelen tardar entre 2 y 3 1/2 horas."
@@ -52,7 +52,7 @@ const Services = props => {
             props.language ? "Inspección de 4 Puntos" : "4-Point Inspection"
           }
           icon="fas fa-bullseye"
-          price="110"
+          price="105"
           description={
             props.language
               ? "Una Inspección de 4 Puntos examina los cuatro sistemas principales de su hogar: techo, electricidad, plomería y HVAC. Una compañía de seguros quiere saber que su hogar ha recibido un buen mantenimiento y que los sistemas principales están en buenas condiciones y funcionan."
