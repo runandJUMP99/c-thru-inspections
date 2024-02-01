@@ -17,10 +17,10 @@ const Bundle = props => {
           </h1>
           <p className={classes.Description}>
             {props.language
-              ? "Combine una Inspección de Mitigación del Viento y una Inspección de 4 Puntos por solo"
-              : "Combine a Wind Mitigation Inspection and 4-Point Inspection for only"}
+              ? "Ahorre dinero al combinar las inspecciones de 4 Puntos y de Mitigación del Viento"
+              : "Save money when you bundle the 4-Point & Wind Mitigation Inspections"}
           </p>
-          <h1>$175</h1>
+          {/* <h1>$175</h1> */}
           <CTAButton
             link="#contactus"
             onClick={() =>

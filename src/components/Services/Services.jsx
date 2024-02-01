@@ -39,7 +39,7 @@ const Services = props => {
               : "Wind Mitigation Inspection"
           }
           icon="fas fa-wind"
-          price="95"
+          price=""
           description={
             props.language
               ? "Una Inspección de Mitigación de Viento, también llamada Inspección de Mitigación de Tormenta de Viento, es cuando un inspector certificado verifica las características de resistencia al viento de su casa. Aunque no se requiere una inspección de mitigación del viento para obtener el seguro de propietarios de viviendas de Florida, puede resultar en ahorros sustanciales para su hogar."
@@ -52,7 +52,7 @@ const Services = props => {
             props.language ? "Inspección de 4 Puntos" : "4-Point Inspection"
           }
           icon="fas fa-bullseye"
-          price="105"
+          price=""
           description={
             props.language
               ? "Una Inspección de 4 Puntos examina los cuatro sistemas principales de su hogar: techo, electricidad, plomería y HVAC. Una compañía de seguros quiere saber que su hogar ha recibido un buen mantenimiento y que los sistemas principales están en buenas condiciones y funcionan."
